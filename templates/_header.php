@@ -40,15 +40,15 @@
           <ul id="header-nav" class="nav nav-pills pull-right">
 
             <?php if ('fr' == $sf_user->getCulture()): ?>
-              <li><?php echo link_to(__('Home'), 'http://10.16.55.144?sf_culture=fr') ?></li>
+              <li><?php echo link_to(__('Home'), '/index.php?sf_culture=fr') ?></li>
             <?php else: ?>
-              <li><?php echo link_to(__('Home'), 'http://10.16.55.144??sf_culture=de') ?></li>
+              <li><?php echo link_to(__('Home'), '/index.php?sf_culture=de') ?></li>
             <?php endif; ?>
 
             <?php if ('fr' == $sf_user->getCulture()): ?>
               <li><?php echo link_to(__('Contactez-nous'), 'https://www.fr.ch/contact?dir=BCUFR') ?></li>
             <?php else: ?>
-              <li><?php echo link_to(__('Contact us'), 'https://www.fr.ch/de/kontakt?dir=BCUFR') ?></li>
+              <li><?php echo link_to(__('Kontaktieren Sie uns'), 'https://www.fr.ch/de/kontakt?dir=BCUFR') ?></li>
             <?php endif; ?>
 
             <?php foreach (array('fr', 'de') as $item): ?>
