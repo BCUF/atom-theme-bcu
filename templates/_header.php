@@ -6,7 +6,6 @@
   <div id="top-bar">
     <nav>
       <?php echo get_component('menu', 'userMenu') ?>
-      <?php echo get_component('menu', 'quickLinksMenu') ?>
       <?php if (sfConfig::get('app_toggleLanguageMenu')): ?>
         <?php echo get_component('menu', 'changeLanguageMenu') ?>
       <?php endif; ?>
@@ -32,9 +31,9 @@
 
         <div id="header-title" class="span4">
            <h1><?php echo __('BCU electronic archive') ?></h1>
-	</div>
+	      </div>
 
-        <div class="span6">
+        <div class="span4">
 
 
           <ul id="header-nav" class="nav nav-pills pull-right">
@@ -63,7 +62,11 @@
             <?php endif; ?>
 
           </ul>
-
+          
+        </div>
+        <div class="span2" align="top">
+          <?php echo get_component('menu', 'clipboardMenu') ?>
+          <?php echo get_component('menu', 'quickLinksMenu') ?>
         </div>
       </div>
     </div>
@@ -74,9 +77,8 @@
 
         <div id="header-search" class="span12" align="center">
           <?php echo get_component('search', 'box') ?>
-
-          <?php echo get_component('menu', 'clipboardMenu') ?>
         </div>
+       
 
       </div>
     </div>

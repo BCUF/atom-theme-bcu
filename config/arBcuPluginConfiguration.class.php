@@ -17,6 +17,8 @@ class arBcuPluginConfiguration extends sfPluginConfiguration
 
   public function initialize()
   {
+    
+    
     // Run the class method contextLoadFactories defined above once Symfony
     // is done loading the internal framework factories.
     $this->dispatcher->connect('context.load_factories', array($this, 'contextLoadFactories'));
@@ -30,5 +32,6 @@ class arBcuPluginConfiguration extends sfPluginConfiguration
     $moduleDirs = sfConfig::get('sf_module_dirs');
     $moduleDirs[$this->rootDir.'/modules'] = false;
     sfConfig::set('sf_module_dirs', $moduleDirs);
+    
   }
 }

@@ -48,6 +48,7 @@
 @import "less/scaffolding.less";
 @import "less/variables.less";
 @import "less/header.less";
+@import "less/homepage.less";
 
 // Local tweaks
 
@@ -75,7 +76,10 @@ h1, h2, h3, h5, h6 {
   color: #000000;
 }
 
-
+#content {
+  border: 0px solid #d9d9d9;
+  box-shadow: 0px 0px;
+}
 
 .fieldset-wrapper,
 #content {
@@ -215,6 +219,7 @@ h1, h2, h3, h5, h6 {
 
 }
 
+#quick-links-menu,
 #clipboard-menu {
   position: relative;
   display: inline-block;
@@ -251,19 +256,19 @@ h1, h2, h3, h5, h6 {
 
 @media (min-width: 1200px) {
   #header-search input[type=text] {
-    width: 800px;
+    width: 900px;
   }
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
   #header-search input[type=text] {
-    width: 700px;
+    width: 800px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
   #header-search input[type=text] {
-    width: 500px;
+    width: 600px;
   }
 }
 
