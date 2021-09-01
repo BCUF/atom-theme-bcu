@@ -28,6 +28,130 @@
     <div class="page">
       <section>
         <img src="/plugins/arBcuPlugin/images/homepage-bg.jpg"></img>
+		    <div id="main" style="width: 45%;margin: auto;margin-top: 2rem;">
+        <ul class="thumbnails">
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="image">
+                    <div class="overlay">
+                        <div class="text">Archives privées</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/archives_musicales.png" alt="" href="#">
+                    <div class="overlay">
+                        <div class="text align-middle">Archives musicales</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/archives_photo.png" alt="" href="#">
+                    <div class="overlay">
+                        <div class="text">Archives photographiques</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/archives_film_son.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Archives film et son</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/archives_institutions.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Archives d'institutions et manifestations culturelles</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/patrimoine_film_son.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Patrimoine film et son</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/livres_manuscrits.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Livres manuscrits</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/imprimes_anciens_rares.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Imprimés anciens et rares</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/periodiques.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Périodiques</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/monographie.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Monographies et ouvrages de référence</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/presse.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Presse</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/affiches_new.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Affiches</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/cartes_plans.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Cartes et plans</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/websites.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Websites</div>
+                    </div>
+                </a>
+            </li>
+            <li class="span2">
+                <a href="#" class="thumbnail">
+                    <img src="/plugins/arBcuPlugin/images/e-books.png" alt="">
+                    <div class="overlay">
+                        <div class="text">E-books</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
       </section>
       <section id="text-section">
         <?php echo render_value($sf_data->getRaw('content')) ?>
