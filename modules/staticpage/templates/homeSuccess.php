@@ -76,9 +76,9 @@
       <section style="display: inline;">
 		<div>
 			<ul class="thumbnails">
-				<li class="span2>
+				<li class="span2">
 					<a href="#" class="thumbnail">
-						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="bcu-image">
+						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="">
 						<div class="overlay">
 							<div class="bcu-text">Archives privées</div>
 						</div>
