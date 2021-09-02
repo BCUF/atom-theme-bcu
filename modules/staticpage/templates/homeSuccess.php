@@ -73,7 +73,7 @@
 		opacity: 0.4;
 		}
 	</style>
-      <section>
+      <section style="display: inline;">
 		<ul class="thumbnails">
 			<li class="span2">
 				<a href="#" class="thumbnail">
