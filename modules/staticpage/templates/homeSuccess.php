@@ -36,7 +36,7 @@
 		width: 100%;
 		}
 
-		.image {
+		.bcu-image {
 		display: block;
 		width: 100%;
 		height: auto;
@@ -49,24 +49,24 @@
 
 		.bcu-text{
 		position: absolute;
-		bottom: 4;
-		right: 4;
-		left: 4;
+		bottom: 4px;
+		right: 4px;
+		left: 4px;
 		background:rgba(255, 255, 255, 0.8);
 		color: black;
-		font-size: 1.1em;
+		font-size: 1.1rem;
 		font-weight: 600;
-		padding-left: 3px;
-		padding-right: 3px;
-		padding-top: 3px;
-		padding-bottom: 3px;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 		/* text-align: center; */
 		}
 		.thumbnail:hover .bcu-text{
 		background:rgba(255, 255, 255, 0.7);
-		font-size: 1.2em;
+		font-size: 1.2rem;
 		height: 76%;
-		padding-top: 1.5em;
+		padding-top: 1.5rem;
 		/* text-align: left; */
 		}
 		.thumbnail:hover img{
@@ -77,7 +77,7 @@
 		<ul class="thumbnails">
 			<li class="span2">
 				<a href="#" class="thumbnail">
-					<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="image">
+					<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="bcu-image">
 					<div class="overlay">
 						<div class="bcu-text">Archives privées</div>
 					</div>
