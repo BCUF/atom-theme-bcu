@@ -85,7 +85,7 @@
 				font-size: 0.6rem;
 			}
 			.thumbnail:hover .bcu-text{
-				font-sizer: 0.7rem;
+				font-size: 0.7rem;
 			}
 		}
 		@media (max-width: 767px) {
