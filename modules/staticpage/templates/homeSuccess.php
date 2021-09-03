@@ -90,11 +90,11 @@
 		}
 		@media (max-width: 767px) {
 			.thumbnail:hover .bcu-text{
-				height: 100%
+				height: 100%;
 				font-size: 0.9rem;
 			}
 			.bcu-text {
-				background:rgba(255, 255, 255, 1);
+				background:rgba(255, 255, 255, 0.95);
 				font-size: 0.8rem;
 			}
 		}
