@@ -31,6 +31,11 @@
 			padding: 0px;	
 		}
 
+		.thumbnails {
+			display: flex;
+			flex-flow: row wrap;
+		}
+
 		.thumbnail {
 			position: relative;
 			width: 100%;
