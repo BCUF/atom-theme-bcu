@@ -80,6 +80,11 @@
 		.thumbnail:hover img{
 			opacity: 0.4;
 		}
+		@media (min-width: 768px) and (max-width: 979px) {
+			.bcu-text{
+				font-size: 0.6rem
+			}
+		}
 	</style>
       <section style="display: inline;">
 		<div>
