@@ -90,12 +90,14 @@
 		}
 		@media (max-width: 767px) {
 			.thumbnail:hover .bcu-text{
-				height: 100%;
-				font-size: 0.9rem;
+				height: 80%;
+				font-size: 1.3em;
+				padding-top: 25%;
+				padding-left: 10%;
 			}
 			.bcu-text {
 				background:rgba(255, 255, 255, 0.95);
-				font-size: 0.8rem;
+				font-size: 1.2em;
 			}
 		}
 	</style>
