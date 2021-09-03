@@ -60,14 +60,14 @@
 			bottom: 4px;
 			right: 4px;
 			left: 4px;
-			background:rgba(255, 255, 255, 0.8);
+			background:rgba(255, 255, 255, 0.9);
 			color: black;
 			font-size: 0.8rem;
 			font-weight: 600;
 			padding-left: 0.5rem;
 			padding-right: 0.5rem;
-			padding-top: 0.5rem;
-			padding-bottom: 0.5rem;
+			padding-top: 0.7rem;
+			padding-bottom: 0.7rem;
 			/* text-align: center; */
 		}
 		.thumbnail:hover .bcu-text{
@@ -82,7 +82,20 @@
 		}
 		@media (min-width: 768px) and (max-width: 979px) {
 			.bcu-text{
-				font-size: 0.6rem
+				font-size: 0.6rem;
+			}
+			.thumbnail:hover .bcu-text{
+				font-sizer: 0.7rem;
+			}
+		}
+		@media (max-width: 767px) {
+			.thumbnail:hover .bcu-text{
+				height: 100%
+				font-size: 0.9rem;
+			}
+			.bcu-text {
+				background:rgba(255, 255, 255, 1);
+				font-size: 0.8rem;
 			}
 		}
 	</style>
