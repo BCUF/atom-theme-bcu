@@ -28,49 +28,52 @@
     <div class="page">
 	<style>
 		.actions {
-		padding: 0px;
+			padding: 0px;	
 		}
 
 		.thumbnail {
-		position: relative;
-		width: 100%;
+			position: relative;
+			width: 100%;
+			border: none;
+			max-width: 400px;
 		}
 
 		.bcu-image {
-		display: block;
-		width: 100%;
-		height: auto;
+			display: block;
+			width: 100%;
+			height: auto;
 		}
 
 		a.thumbnail:hover{
-		display: grid;
-		border-color: lightgrey;
+			display: grid;
+			border-color: lightgrey;
+			border: none;
 		}
 
 		.bcu-text{
-		position: absolute;
-		bottom: 4px;
-		right: 4px;
-		left: 4px;
-		background:rgba(255, 255, 255, 0.8);
-		color: black;
-		font-size: 1.1rem;
-		font-weight: 600;
-		padding-left: 0.5rem;
-		padding-right: 0.5rem;
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
-		/* text-align: center; */
+			position: absolute;
+			bottom: 4px;
+			right: 4px;
+			left: 4px;
+			background:rgba(255, 255, 255, 0.8);
+			color: black;
+			font-size: 0.8rem;
+			font-weight: 600;
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			/* text-align: center; */
 		}
 		.thumbnail:hover .bcu-text{
-		background:rgba(255, 255, 255, 0.7);
-		font-size: 1.2rem;
-		height: 76%;
-		padding-top: 1.5rem;
-		/* text-align: left; */
+			background:rgba(255, 255, 255, 0.7);
+			font-size: 0.9rem;
+			height: 80%;
+			padding-top: 2rem;
+			/* text-align: left; */
 		}
 		.thumbnail:hover img{
-		opacity: 0.4;
+			opacity: 0.4;
 		}
 	</style>
       <section style="display: inline;">
