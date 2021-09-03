@@ -36,6 +36,7 @@
 			width: 100%;
 			border: none;
 			max-width: 400px;
+			box-shadow: none;
 		}
 
 		.bcu-image {
@@ -46,10 +47,14 @@
 
 		a.thumbnail:hover{
 			display: grid;
-			border-color: lightgrey;
 			border: none;
+			box-shadow: none;
 		}
 
+		.overlay{
+			height: 100%;
+		}	
+			
 		.bcu-text{
 			position: absolute;
 			bottom: 4px;
