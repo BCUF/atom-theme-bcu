@@ -13,7 +13,7 @@
       <?php endif; ?>
 
 <!-- Emplacement bouton dropdown -->
-  <button type="submit" class="btn">Search</button>
+  <button type="submit" class="btn"><i class="icon-search"></i></button>
 
     </div>
 
