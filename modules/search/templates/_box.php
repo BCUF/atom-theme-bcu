@@ -1,6 +1,6 @@
 <div id="search-form-wrapper">
 
-  <form action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>">
+  <form action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>"> 
 
     <input type="hidden" name="topLod" value="0"/>
 
@@ -13,9 +13,8 @@
       <?php endif; ?>
 
 <!-- Emplacement bouton dropdown -->
-      <input type="text" name="query" value="" placeholder="Search"/>
-    
-      <button><span>Rechercher</span></button>
+  <input type="text" class="input-medium search-query">
+  <button type="submit" class="btn">Search</button>
 
     </div>
 
