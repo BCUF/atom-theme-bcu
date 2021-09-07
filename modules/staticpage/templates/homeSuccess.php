@@ -105,7 +105,7 @@
 		<div>
 			<ul class="thumbnails bcu-thumbnails">
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Archives privées</div>
@@ -113,7 +113,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/archives_musicales.png" alt="" href="#">
 						<div class="bcu-overlay">
 							<div class="bcu-text align-middle">Archives musicales</div>
@@ -121,7 +121,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/archives_photo.png" alt="" href="#">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Archives photographiques</div>
@@ -129,7 +129,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/archives_film_son.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Archives film et son</div>
@@ -137,7 +137,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/archives_institutions.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Archives d'institutions et manifestations culturelles</div>
@@ -145,7 +145,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/patrimoine_film_son.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Patrimoine film et son</div>
@@ -153,7 +153,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/livres_manuscrits.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Livres manuscrits</div>
@@ -161,7 +161,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/imprimes_anciens_rares.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Imprimés anciens et rares</div>
@@ -169,7 +169,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/periodiques.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Périodiques</div>
@@ -177,7 +177,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/monographie.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Monographies et ouvrages de référence</div>
@@ -185,7 +185,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/presse.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Presse</div>
@@ -193,7 +193,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/affiches_new.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Affiches</div>
@@ -201,7 +201,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/cartes_plans.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Cartes et plans</div>
@@ -209,7 +209,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/websites.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">Websites</div>
@@ -217,7 +217,7 @@
 					</a>
 				</li>
 				<li class="span2">
-					<a href="#" class="bcu-thumbnail">
+					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/e-books.png" alt="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">E-books</div>
