@@ -13,12 +13,13 @@
       <?php endif; ?>
 
 <!-- Emplacement bouton dropdown -->
+      <input type="text" name="query" value="" placeholder="Search"/>
+    
+      <button><span>Rechercher</span></button>
 
     </div>
 
     <div id="search-realm" class="search-popover">
-
-
 
       <div class="search-realm-advanced">
         <a href="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse', 'showAdvanced' => true, 'topLod' => false)) ?>">
