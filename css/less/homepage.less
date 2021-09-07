@@ -12,49 +12,77 @@
 }
 
 // hover for main page
+
 // .actions {
-//   padding: 0px;
+//   padding: 0px;	
 // }
 
-// .thumbnail {
-//   position: relative;
-//   width: 100%;
-// }
+.bcu-thumbnail {
+  position: relative;
+  width: 100%;
+  border: none;
+  max-width: 400px;
+  box-shadow: none;
+}
 
-// .image {
-//   display: block;
-//   width: 100%;
-//   height: auto;
-// }
+.bcu-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-// a.thumbnail:hover{
-//   display: grid;
-//   border-color: lightgrey;
-// }
+a.bcu-thumbnail:hover{
+  display: grid;
+  border: none;
+  box-shadow: none;
+}
 
-// .text{
-//   position: absolute;
-//   bottom: 4;
-//   right: 4;
-//   left: 4;
-//   background:rgba(255, 255, 255, 0.8);
-//   color: black;
-//   font-size: 1.1em;
-//   font-weight: 600;
-//   padding-left: 3px;
-//   padding-right: 3px;
-//   padding-top: 3px;
-//   padding-bottom: 3px;
-//   /* text-align: center; */
-// }
-// .thumbnail:hover .text{
-//   background:rgba(255, 255, 255, 0.7);
-//   font-size: 1.2em;
-//   height: 76%;
-//   padding-top: 1.5em;
-//   /* text-align: left; */
-// }
-// .thumbnail:hover img{
-//   opacity: 0.4;
-// }
-
+.bcu-overlay{
+  height: 100%;
+}	
+  
+.bcu-text{
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  left: 4px;
+  background:rgba(255, 255, 255, 0.9);
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  /* text-align: center; */
+}
+.bcu-thumbnail:hover .bcu-text{
+  background:rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  height: 80%;
+  padding-top: 2rem;
+  /* text-align: left; */
+}
+.bcu-thumbnail:hover img{
+  opacity: 0.4;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .bcu-text{
+    font-size: 0.6rem;
+  }
+  .bcu-thumbnail:hover .bcu-text{
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .bcu-thumbnail:hover .bcu-text{
+    height: 80%;
+    font-size: 1.3em;
+    padding-top: 25%;
+    padding-left: 10%;
+  }
+  .bcu-text {
+    background:rgba(255, 255, 255, 0.95);
+    font-size: 1.2em;
+  }
+}
