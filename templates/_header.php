@@ -73,7 +73,7 @@
           <div class="row">
 
 
-            <div id="header-search" class="span6" align="center">
+            <div id="header-search" class="span6">
               <?php echo get_component('search', 'box') ?>
             </div>
 
