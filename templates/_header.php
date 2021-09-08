@@ -68,20 +68,21 @@
           <?php echo get_component('menu', 'clipboardMenu') ?>
           <?php echo get_component('menu', 'quickLinksMenu') ?>
         </div>
-      </div>
-    </div>
-    <div class="span6"></div>
-    <div id="header-lvl2">
-      <div class="row">
+        <div class="span6"></div>
+        <div id="header-lvl2">
+          <div class="row">
 
 
-        <div id="header-search" class="span6" align="center">
-          <?php echo get_component('search', 'box') ?>
+            <div id="header-search" class="span6" align="center">
+              <?php echo get_component('search', 'box') ?>
+            </div>
+
+
+          </div>
         </div>
-
-
       </div>
     </div>
+
 
   </div>
 
