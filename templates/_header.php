@@ -63,6 +63,18 @@
 
           </ul>
           
+          <div id="header-lvl2">
+            <div class="row">
+
+
+              <div id="header-search" class="span12" align="center">
+                <?php echo get_component('search', 'box') ?>
+              </div>
+       
+
+            </div>
+          </div>
+
         </div>
         <div class="span2" align="top">
           <?php echo get_component('menu', 'clipboardMenu') ?>
@@ -71,17 +83,7 @@
       </div>
     </div>
 
-    <div id="header-lvl2">
-      <div class="row">
 
-
-        <div id="header-search" class="span12" align="center">
-          <?php echo get_component('search', 'box') ?>
-        </div>
-       
-
-      </div>
-    </div>
 
   </div>
 
