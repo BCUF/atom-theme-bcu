@@ -75,7 +75,7 @@
       <div class="row">
 
 
-        <div id="header-search" class="span12">
+        <div id="header-search" class="span12" align="center">
           <?php echo get_component('search', 'box') ?>
         </div>
 
