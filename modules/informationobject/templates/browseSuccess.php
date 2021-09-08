@@ -44,6 +44,13 @@
         <h2><?php echo sfConfig::get('app_ui_label_facetstitle'); ?></h2>
 
         <?php echo get_partial('search/aggregation', [
+            'id' => '#facet-languages',
+            'label' => __('Language'),
+            'name' => 'languages',
+            'aggs' => $aggs,
+            'filters' => $search->filters, ]); ?>
+
+        <?php echo get_partial('search/aggregation', [
             'id' => '#facet-collection',
             'label' => __('Part of'),
             'name' => 'collection',
