@@ -62,16 +62,16 @@
             <?php endif; ?>
             
             <div id="header-lvl2">
-            <div class="row">
+              <div class="row">
 
 
-              <div id="header-search" class="span12">
-                <?php echo get_component('search', 'box') ?>
+                <div id="header-search" class="span12">
+                  <?php echo get_component('search', 'box') ?>
+                </div>
+        
+
               </div>
-       
-
             </div>
-          </div>
 
           </ul>
           
