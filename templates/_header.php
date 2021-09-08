@@ -61,17 +61,19 @@
               <li><?php echo link_to(__('Log in'), array('module' => 'user', 'action' => 'login')) ?></li>
             <?php endif; ?>
             
-            <div id="header-lvl2">
-              <div class="row">
+            <li>
+              <div id="header-lvl2">
+                <div class="row">
 
 
-                <div id="header-search" class="span12">
-                  <?php echo get_component('search', 'box') ?>
+                  <div id="header-search" class="span12">
+                    <?php echo get_component('search', 'box') ?>
+                  </div>
+          
+
                 </div>
-        
-
               </div>
-            </div>
+            </li>
 
           </ul>
           
