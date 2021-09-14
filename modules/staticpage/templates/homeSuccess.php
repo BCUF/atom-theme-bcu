@@ -36,7 +36,7 @@
 						<div class="bcu-overlay">
 							<div class="bcu-text">
 								<!-- Archives privées -->
-								<?php echo image_tag($icons[$item->name]); ?><?php } ?>
+								<?php echo image_tag($icons[$item->name]); ?>
 							</div>
 						</div>
 					</a>
