@@ -35,8 +35,8 @@
 						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">
-								<!-- Archives privées -->
-								<?php echo image_tag($icons[$item->name]); ?>
+								Archives privées
+								<!-- <//?php echo image_tag($icons[$item->name]); ?> -->
 							</div>
 						</div>
 					</a>
