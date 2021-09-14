@@ -31,8 +31,8 @@
 		<div>
 			<ul class="thumbnails bcu-thumbnails">
 				<li class="span2">
-					<a href="#" class="thumbnail bcu-thumbnail">
-						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="">
+					<a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
+						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">
 								Archives privées
