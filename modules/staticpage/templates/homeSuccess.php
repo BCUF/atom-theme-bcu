@@ -34,7 +34,11 @@
 					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="">
 						<div class="bcu-overlay">
-							<div class="bcu-text">Archives privées</div>
+							<div class="bcu-text">
+								<!-- Archives privées -->
+								<?php $icons = [
+									'browseInformationObjects' => '/images/icons-large/icon-archival.png', ]; ?>
+							</div>
 						</div>
 					</a>
 				</li>
