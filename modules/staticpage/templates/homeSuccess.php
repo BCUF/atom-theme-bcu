@@ -32,11 +32,11 @@
 			<ul class="thumbnails bcu-thumbnails">
 				<li class="span2">
 					<a href="#" class="thumbnail bcu-thumbnail">
-						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="">
+						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="">
 						<div class="bcu-overlay">
 							<div class="bcu-text">
-								<!-- Archives privées -->
-								<?php echo "$browseInformationObjects"; ?>
+								Archives privées
+								<!-- <?php echo "$browseInformationObjects"; ?> -->
 							</div>
 						</div>
 					</a>
