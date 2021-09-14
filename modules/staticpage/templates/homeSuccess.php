@@ -36,8 +36,7 @@
 						<div class="bcu-overlay">
 							<div class="bcu-text">
 								<!-- Archives privées -->
-								<?php $icons = [
-									'browseInformationObjects' => '/images/icons-large/icon-archival.png', ]; ?>
+								<?php echo __('browseInformationObjects'); ?>
 							</div>
 						</div>
 					</a>
