@@ -36,7 +36,7 @@
 						<div class="bcu-overlay">
 							<div class="bcu-text">
 								<!-- Archives privées -->
-								<?php echo __($browseInformationObjects); ?>
+								<?php echo "$browseInformationObjects"; ?>
 							</div>
 						</div>
 					</a>
