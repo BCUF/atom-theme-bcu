@@ -30,18 +30,40 @@
       <section style="display: inline;">
 		<div>
 			<ul class="thumbnails bcu-thumbnails">
-				<li class="span2">
-					<a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
-						<img src="/plugins/arBcuPlugin/images/archives_privees.png" alt="" href="#" class="">
-						<div class="bcu-overlay">
-							<div class="bcu-text">
-								Archives privées
-								<!-- <//?php echo image_tag($icons[$item->name]); ?> -->
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="span2">
+				<?php $thumbnails = [
+					'browsePrivateArchives' => '/plugins/arBcuPlugin/images/archives_privees.png',
+					'browseMusicalArchives' => '/plugins/arBcuPlugin/images/archives_musicales.png',
+					'browsePhotographicArchives' => '/plugins/arBcuPlugin/images/archives_photo.png',
+					'browseFilmArchives' => '/plugins/arBcuPlugin/images/archives_film_son.png',
+					'browseInstitutionalArchives' => '/plugins/arBcuPlugin/images/archives_institutions.png',
+					//'browseFilmHeritage' => '/plugins/arBcuPlugin/images/patrimoine_film_son.png',
+					'browseManuscripts' => '/plugins/arBcuPlugin/images/livres_manuscrits.png',
+					'browseAncientPrints' => '/plugins/arBcuPlugin/images/imprimes_anciens_rares.png',
+					'browsePeriodicals' => '/plugins/arBcuPlugin/images/periodiques.png',
+					'browseMonographs' => '/plugins/arBcuPlugin/images/monographie.png',
+					'browsePress' => '/plugins/arBcuPlugin/images/presse.png',
+					'browsePosters' => '/plugins/arBcuPlugin/images/affiches_new.png',
+					'browseMaps' => '/plugins/arBcuPlugin/images/cartes_plans.png',
+					'browseWebsites' => '/plugins/arBcuPlugin/images/websites.png',
+					'browseEBooks' => '/plugins/arBcuPlugin/images/e-books.png', ]; ?>
+				<?php $MainNav = QubitMenu::getByName('MainNav'); ?>
+				<?php if ($MainNav->hasChildren()) { ?>
+					<?php foreach ($MainNav->getChildren() as $item) { ?>
+						<li class="span2">
+							<a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
+								<img src="<?php echo $thumbnails; ?>" alt="" href="#" class="">
+								<div class="bcu-overlay">
+									<div class="bcu-text">
+										<!-- Archives privées -->
+										<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>
+										<!-- <//?php echo image_tag($thumbnails[$item->name]); ?> -->
+									</div>
+								</div>
+							</a>
+						</li>
+					<?php } ?>
+            	<?php } ?>
+				<!-- <li class="span2">
 					<a href="#" class="thumbnail bcu-thumbnail">
 						<img src="/plugins/arBcuPlugin/images/archives_musicales.png" alt="" href="#">
 						<div class="bcu-overlay">
@@ -152,7 +174,7 @@
 							<div class="bcu-text">E-books</div>
 						</div>
 					</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
       </section>
