@@ -21,7 +21,7 @@
         </ul>
       </section>
 
-      <?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?>
+      <!-- <//?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?> -->
 
     <?php end_slot() ?>
 
