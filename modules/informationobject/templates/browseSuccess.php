@@ -43,14 +43,12 @@
 
         <h2><?php echo sfConfig::get('app_ui_label_facetstitle'); ?></h2>
 
-        <?php if (sfConfig::get('app_multi_repository')) { ?>
-          <?php echo get_partial('search/aggregation', [
-              'id' => '#facet-repository',
-              'label' => sfConfig::get('app_ui_label_repository'),
-              'name' => 'repos',
-              'aggs' => $aggs,
-              'filters' => $search->filters, ]); ?>
-        <?php } ?>
+        <?php echo get_partial('search/aggregation', [
+            'id' => '#facet-mediaTypes',
+            'label' => sfConfig::get('app_ui_label_mediatype'),
+            'name' => 'mediatypes',
+            'aggs' => $aggs,
+            'filters' => $search->filters, ]); ?>
 
         <?php echo get_partial('search/aggregation', [
             'id' => '#facet-collection',
@@ -58,6 +56,15 @@
             'name' => 'collection',
             'aggs' => $aggs,
             'filters' => $search->filters, ]); ?>
+
+        <!-- <//?php if (sfConfig::get('app_multi_repository')) { ?>
+          <//?php echo get_partial('search/aggregation', [
+              'id' => '#facet-repository',
+              'label' => sfConfig::get('app_ui_label_repository'),
+              'name' => 'repos',
+              'aggs' => $aggs,
+              'filters' => $search->filters, ]); ?>
+        <//?php } ?> -->
 
         <?php echo get_partial('search/aggregation', [
             'id' => '#facet-names',
@@ -98,13 +105,6 @@
             'id' => '#facet-levelOfDescription',
             'label' => __('Level of description'),
             'name' => 'levels',
-            'aggs' => $aggs,
-            'filters' => $search->filters, ]); ?> -->
-
-        <!-- <//?php echo get_partial('search/aggregation', [
-            'id' => '#facet-mediaTypes',
-            'label' => sfConfig::get('app_ui_label_mediatype'),
-            'name' => 'mediatypes',
             'aggs' => $aggs,
             'filters' => $search->filters, ]); ?> -->
 
