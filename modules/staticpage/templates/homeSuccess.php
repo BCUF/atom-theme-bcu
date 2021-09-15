@@ -51,7 +51,7 @@
 					<?php foreach ($MainNav->getChildren() as $item) { ?>
 						<li class="span2">
 							<a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
-								<img src="<?php echo image_tag($thumbnails[$item->name]); ?>" alt="" href="#" class="">
+								<img src="<?php echo ($thumbnails[$item->name]); ?>" alt="" href="#" class="">
 								<div class="bcu-overlay">
 									<div class="bcu-text">
 										<!-- Archives privées -->
