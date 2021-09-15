@@ -50,14 +50,14 @@
             'aggs' => $aggs,
             'filters' => $search->filters, ]); ?>
 
-        <?php if (sfConfig::get('app_multi_repository')) { ?>
-          <?php echo get_partial('search/aggregation', [
+        <!-- <//?php if (sfConfig::get('app_multi_repository')) { ?>
+          <//?php echo get_partial('search/aggregation', [
               'id' => '#facet-repository',
               'label' => sfConfig::get('app_ui_label_repository'),
               'name' => 'repos',
               'aggs' => $aggs,
               'filters' => $search->filters, ]); ?>
-        <?php } ?>
+        <//?php } ?> -->
 
         <?php echo get_partial('search/aggregation', [
             'id' => '#facet-names',
@@ -94,19 +94,19 @@
             'aggs' => $aggs,
             'filters' => $search->filters, ]); ?>
 
-        <?php echo get_partial('search/aggregation', [
+        <!-- <//?php echo get_partial('search/aggregation', [
             'id' => '#facet-levelOfDescription',
             'label' => __('Level of description'),
             'name' => 'levels',
             'aggs' => $aggs,
-            'filters' => $search->filters, ]); ?>
+            'filters' => $search->filters, ]); ?> -->
 
-        <?php echo get_partial('search/aggregation', [
+        <!-- <//?php echo get_partial('search/aggregation', [
             'id' => '#facet-mediaTypes',
             'label' => sfConfig::get('app_ui_label_mediatype'),
             'name' => 'mediatypes',
             'aggs' => $aggs,
-            'filters' => $search->filters, ]); ?>
+            'filters' => $search->filters, ]); ?> -->
 
       </div>
 
