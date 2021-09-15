@@ -23,9 +23,9 @@
 
         <div id="logo-and-name" class="span2">
           <?php if ('fr' == $sf_user->getCulture()): ?>
-            <h1><?php echo link_to(image_tag('/plugins/arBcuPlugin/images/header-logo.svg', array('alt' => __('Bibliothèque cantonale et universitaire'))), 'https://www.fr.ch/bcufr', array('rel' => 'home')) ?></h1>
+            <h1><?php echo link_to(image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', array('alt' => __('Bibliothèque cantonale et universitaire'))), 'https://www.fr.ch/bcufr', array('rel' => 'home')) ?></h1>
           <?php else: ?>
-            <h1><?php echo link_to(image_tag('/plugins/arBcuPlugin/images/header-logo.svg', array('alt' => __('Kantons-und Universitätsbibliothek'))), 'https://www.fr.ch/kub', array('rel' => 'home')) ?></h1>
+            <h1><?php echo link_to(image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', array('alt' => __('Kantons-und Universitätsbibliothek'))), 'https://www.fr.ch/kub', array('rel' => 'home')) ?></h1>
           <?php endif; ?>
         </div>
 
