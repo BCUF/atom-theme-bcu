@@ -43,21 +43,21 @@
 
         <h2><?php echo sfConfig::get('app_ui_label_facetstitle'); ?></h2>
 
+        <?php if (sfConfig::get('app_multi_repository')) { ?>
+          <?php echo get_partial('search/aggregation', [
+              'id' => '#facet-repository',
+              'label' => sfConfig::get('app_ui_label_repository'),
+              'name' => 'repos',
+              'aggs' => $aggs,
+              'filters' => $search->filters, ]); ?>
+        <?php } ?>
+
         <?php echo get_partial('search/aggregation', [
             'id' => '#facet-collection',
             'label' => __('Part of'),
             'name' => 'collection',
             'aggs' => $aggs,
             'filters' => $search->filters, ]); ?>
-
-        <!-- <//?php if (sfConfig::get('app_multi_repository')) { ?>
-          <//?php echo get_partial('search/aggregation', [
-              'id' => '#facet-repository',
-              'label' => sfConfig::get('app_ui_label_repository'),
-              'name' => 'repos',
-              'aggs' => $aggs,
-              'filters' => $search->filters, ]); ?>
-        <//?php } ?> -->
 
         <?php echo get_partial('search/aggregation', [
             'id' => '#facet-names',
