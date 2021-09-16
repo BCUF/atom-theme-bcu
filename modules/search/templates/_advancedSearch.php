@@ -203,9 +203,10 @@
               <input type="radio" name="topLod" value="0" <?php echo !$topLod ? 'checked' : '' ?>>
               <?php echo __('All descriptions') ?>
             </label>
+            <label>
+                <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
+            </label>
           </div>
-
-          <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
 
         </div>
 
