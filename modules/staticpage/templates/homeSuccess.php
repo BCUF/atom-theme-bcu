@@ -19,7 +19,6 @@
             <?php endforeach; ?>
           <?php endif; ?>
         </ul>
-		<ul>
 			<!-- <//?php decorate_with('layout_1col.php'); ?> -->
 
 			<?php slot('title'); ?>
@@ -35,7 +34,6 @@
 			<span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage; ?>"></span>
 
 			<?php end_slot(); ?>
-		</ul>
       </section>
 
       <!-- <//?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?> -->
