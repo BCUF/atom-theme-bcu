@@ -21,7 +21,7 @@
         </ul>
 		<ul>
 			<div>
-              <?php echo get_component('fullwidth-treeview-configuration') ?>
+              <?php echo __('fullwidth-treeview-configuration') ?>
             </div>
 		</ul>
       </section>
