@@ -13,13 +13,9 @@ hierarchySuccess:
     /vendor/jstree/themes/default/style.min.css:
     fullWidthTreeView:
   javascripts:
-    /vendor/jstree/jstree.min.js:
-    /js/treeView.js:
-    /js/treeviewPager.js:   
-    /js/treeviewTypes.js:
-    /js/hierarchy.js:
-    /js/pager.js:    
-    treeviewTypes:
-    pager:
-    treeViewPager:
-    hierarchy:
+    /vendor/jstree/jstree.min:
+    /js/treeView:
+    /js/treeviewPager:   
+    /js/treeviewTypes:
+    /js/hierarchy:
+    /js/pager:    
