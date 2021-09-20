@@ -14,6 +14,11 @@ hierarchySuccess:
     fullWidthTreeView:
   javascripts:
     /vendor/jstree/jstree.min.js:
+    /js/treeView.js:
+    /js/treeviewPager.js:   
+    /js/treeviewTypes.js:
+    /js/hierarchy.js:
+    /js/pager.js:    
     treeviewTypes:
     pager:
     treeViewPager:
