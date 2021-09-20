@@ -21,7 +21,7 @@
         </ul>
 		<ul>
 			<div>
-			<?php echo __($loadTreeView) ?>
+				<?php echo __($loadTreeView) ?>
             </div>
 		</ul>
       </section>
