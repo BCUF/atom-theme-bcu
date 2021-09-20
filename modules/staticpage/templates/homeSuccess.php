@@ -20,7 +20,7 @@
           <?php endif; ?>
         </ul>
 		<ul>
-			<?php decorate_with('layout_1col.php'); ?>
+			<!-- <//?php decorate_with('layout_1col.php'); ?> -->
 
 			<?php slot('title'); ?>
 				<input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit" value="<?php echo __('Reset'); ?>" />
