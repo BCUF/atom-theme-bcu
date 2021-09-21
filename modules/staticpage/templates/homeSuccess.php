@@ -9,7 +9,7 @@
 
 		<?php echo get_component('menu', 'staticPagesMenu') ?>
 
-		<section>
+		<section class="span3">
 			<h2><?php echo __('Browse by') ?></h2>
 			<ul>
 				<?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
@@ -19,10 +19,14 @@
 					<?php endforeach; ?>
 				<?php endif; ?>
 			</ul>
-			<ul>
 				<!-- <//?php decorate_with('layout_1col.php') ?> -->
 
-
+				<?php slot('title') ?>
+					<!-- <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit" value="</?php echo __('Reset') ?>" />
+					<input type="button" id="fullwidth-treeview-more-button" class="c-btn c-btn-submit" data-label="</?php echo __('%1% more') ?>" value="" /> -->
+					<?php echo image_tag('/vendor/jstree/themes/default/throbber.gif', array('id' => 'fullwidth-treeview-activity-indicator', 'alt' => __('Loading ...'))) ?>
+					<h1><?php echo __('Hierarchy') ?></h1>
+				<?php end_slot() ?>
 
 				<?php slot('content') ?>
 
@@ -30,7 +34,6 @@
 				<span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
 
 				<?php end_slot() ?>
-			</ul>
 		</section>
 
 	<!-- <//?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?> -->
