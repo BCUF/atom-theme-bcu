@@ -35,9 +35,9 @@
 
 	<!-- <//?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?> -->
 
-		<?php end_slot() ?>
+	<?php end_slot() ?>
 
-		<div class="page">
+	<div class="page">
 
 		<section style="display: inline;">
 		<div>
