@@ -8,14 +8,13 @@ listSuccess:
   javascripts:
     /plugins/sfDrupalPlugin/vendor/drupal/misc/tableheader:
 
-hierarchySuccess:
+homeSuccess:
   stylesheets:
     /vendor/jstree/themes/default/style.min.css:
     fullWidthTreeView:
   javascripts:
-    /vendor/jstree/jstree.min:
-    /js/treeView:
-    /js/treeviewPager:   
-    /js/treeviewTypes:
-    /js/hierarchy:
-    /js/pager:    
+    /vendor/jstree/jstree.min.js:
+    treeviewTypes:
+    pager:
+    treeViewPager:
+    /plugins/arBcuPlugin/js/homeHierarchy:
