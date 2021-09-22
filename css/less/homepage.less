@@ -1,4 +1,3 @@
-
 #homepage-hero {
   height: 420px;
   padding-top: 10px;
@@ -14,7 +13,7 @@
 // hover for main page
 
 .actions {
-  padding: 0px;	
+  padding: 0px;
 }
 
 .bcu-thumbnail {
@@ -31,22 +30,22 @@
   height: auto;
 }
 
-a.bcu-thumbnail:hover{
+a.bcu-thumbnail:hover {
   display: grid;
   border: none;
   box-shadow: none;
 }
 
-.bcu-overlay{
+.bcu-overlay {
   height: 100%;
-}	
-  
-.bcu-text{
+}
+
+.bcu-text {
   position: absolute;
   bottom: 4px;
   right: 4px;
   left: 4px;
-  background:rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   color: black;
   font-size: 0.8rem;
   font-weight: 600;
@@ -56,14 +55,16 @@ a.bcu-thumbnail:hover{
   padding-bottom: 0.7rem;
   /* text-align: center; */
 }
-.bcu-thumbnail:hover .bcu-text{
-  background:rgba(255, 255, 255, 0.7);
+
+.bcu-thumbnail:hover .bcu-text {
+  background: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
   height: 80%;
   padding-top: 2rem;
   /* text-align: left; */
 }
-.bcu-thumbnail:hover img{
+
+.bcu-thumbnail:hover img {
   opacity: 0.4;
 }
 
@@ -73,36 +74,45 @@ a.bcu-thumbnail:hover{
 
 //hierarchy
 
-#fullwidth-treeview-reset-button {
-  display: none;
-}
+#fullwidth-treeview-reset-button,
 #fullwidth-treeview-more-button {
   display: none;
 }
-.jstree::-webkit-scrollbar{
+
+.jstree::-webkit-scrollbar {
   display: none;
 }
-.jstree{
+
+.jstree {
   -ms-overflow-style: none;
 }
 
+.jstree-node,
+.jstree-children,
+.jstree-container-ul {
+  padding-right: 10px;
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
-  .bcu-text{
+  .bcu-text {
     font-size: 0.6rem;
   }
-  .bcu-thumbnail:hover .bcu-text{
+
+  .bcu-thumbnail:hover .bcu-text {
     font-size: 0.7rem;
   }
 }
+
 @media (max-width: 767px) {
-  .bcu-thumbnail:hover .bcu-text{
+  .bcu-thumbnail:hover .bcu-text {
     height: 80%;
     font-size: 1.3em;
     padding-top: 25%;
     padding-left: 10%;
   }
+
   .bcu-text {
-    background:rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     font-size: 1.2em;
   }
 }
