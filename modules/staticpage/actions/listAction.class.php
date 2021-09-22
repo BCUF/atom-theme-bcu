@@ -21,10 +21,10 @@ class BrowseListAction extends sfAction
 {
     public function execute($request)
     {
-        $this->browseList = $this->request->browseList;
-        $this->forward404Unless($this->browseList);
+        $this->homeList = $this->request->homeList;
+        $this->forward404Unless($this->homeList);
 
-        switch ($this->browseList) {
+        switch ($this->homeList) {
             case 'subject':
                 $this->context->user->setAttribute('browse_list', 'subject');
                 $this->redirect(['module' => 'taxonomy', 'id' => QubitTaxonomy::SUBJECT_ID]);
