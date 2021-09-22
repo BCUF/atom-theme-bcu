@@ -94,10 +94,16 @@
         <section>
           <!-- <h2></?php echo __('Browse by') ?></h2> -->
           <ul class="BCU-header-menu-ul">
+            <?php $bcubrowseicon = [
+              'browseInformationObjects' => '<i class="bi bi-collection"></i>',
+              'browseSubjects' => '<i class="bi bi-collection"></i>',
+              'browsePlacess' => '<i class="bi bi-collection"></i>',
+              'browseActors' => '<i class="bi bi-collection"></i>',
+            ]
             <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
             <?php if ($browseMenu->hasChildren()): ?>
               <?php foreach ($browseMenu->getChildren() as $item): ?>
-                <li class="BCU-header-menu-li"><a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
+                <li class="BCU-header-menu-li"><a href="<?php echo ($thumbnails[$item->name]); ?><?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
               <?php endforeach; ?>
             <?php endif; ?>
           </ul>
