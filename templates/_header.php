@@ -93,7 +93,7 @@
 
         <section>
           <!-- <h2></?php echo __('Browse by') ?></h2> -->
-          <ul>
+          <ul class="BCU-header-menu-ul">
             <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
             <?php if ($browseMenu->hasChildren()): ?>
               <?php foreach ($browseMenu->getChildren() as $item): ?>
