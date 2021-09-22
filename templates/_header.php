@@ -98,8 +98,7 @@
               'browseInformationObjects' => '<i class="bi bi-collection"></i>',
               'browseSubjects' => '<i class="bi bi-collection"></i>',
               'browsePlacess' => '<i class="bi bi-collection"></i>',
-              'browseActors' => '<i class="bi bi-collection"></i>',
-            ]
+              'browseActors' => '<i class="bi bi-collection"></i>', ]; ?>
             <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
             <?php if ($browseMenu->hasChildren()): ?>
               <?php foreach ($browseMenu->getChildren() as $item): ?>
