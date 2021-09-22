@@ -9,7 +9,7 @@
 
 		<?php echo get_component('menu', 'staticPagesMenu') ?>
 
-		<section class="span3">
+		<section class="span3 row">
 			<h2><?php echo __('Browse by') ?></h2>
 			<ul>
 				<?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
@@ -18,6 +18,9 @@
 						<li><a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
 					<?php endforeach; ?>
 				<?php endif; ?>
+			</ul>
+				<!-- <//?php decorate_with('layout_1col.php') ?> -->
+
 				<?php slot('title') ?>
 					<!-- <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit" value="</?php echo __('Reset') ?>" />
 					<input type="button" id="fullwidth-treeview-more-button" class="c-btn c-btn-submit" data-label="</?php echo __('%1% more') ?>" value="" /> -->
@@ -31,10 +34,6 @@
 				<span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
 
 				<?php end_slot() ?>
-			</ul>
-				<!-- <//?php decorate_with('layout_1col.php') ?> -->
-
-
 		</section>
 
 	<!-- <//?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?> -->
