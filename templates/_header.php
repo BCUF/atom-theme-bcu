@@ -87,7 +87,7 @@
 
           </div>
         </div>
-        <?php slot('sidebar') ?>
+        <!-- </?php slot('sidebar') ?> -->
 
         <?php echo get_component('menu', 'staticPagesMenu') ?>
 
@@ -102,7 +102,7 @@
             <?php endif; ?>
           </ul>
         </section>
-        <?php end_slot() ?>
+        <!-- </?php end_slot() ?> -->
       </div>
     </div>
 
