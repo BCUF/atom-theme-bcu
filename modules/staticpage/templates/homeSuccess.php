@@ -28,12 +28,12 @@
 				<h1><?php echo __('Hierarchy') ?></h1>
 				<!-- </?php end_slot() ?> -->
 
-				<?php slot('content') ?>
+				<!-- </?php slot('content') ?> -->
 
 				<div id='main-column' class='span3'></div>
 				<span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
 
-				<?php end_slot() ?>
+				<!-- </?php end_slot() ?> -->
 		</section>
 
 	<!-- <//?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?> -->
