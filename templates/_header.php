@@ -89,9 +89,9 @@
         </div>
         <!-- </?php slot('sidebar') ?> -->
 
-        <?php echo get_component('menu', 'staticPagesMenu') ?>
+        <!-- </?php echo get_component('menu', 'staticPagesMenu') ?> -->
 
-        <section>
+        <!-- <section> -->
           <!-- <h2></?php echo __('Browse by') ?></h2> -->
           <ul class="BCU-header-menu-ul">
             <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
@@ -101,7 +101,7 @@
               <?php endforeach; ?>
             <?php endif; ?>
           </ul>
-        </section>
+        <!-- </section> -->
         <!-- </?php end_slot() ?> -->
       </div>
     </div>
