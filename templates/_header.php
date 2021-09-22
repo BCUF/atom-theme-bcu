@@ -97,7 +97,7 @@
             <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
             <?php if ($browseMenu->hasChildren()): ?>
               <?php foreach ($browseMenu->getChildren() as $item): ?>
-                <li class="BCU-header-menu"><a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
+                <li class="BCU-header-menu-li"><a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
               <?php endforeach; ?>
             <?php endif; ?>
           </ul>
