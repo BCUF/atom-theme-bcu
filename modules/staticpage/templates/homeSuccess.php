@@ -30,7 +30,7 @@
 
 				<?php slot('content') ?>
 
-				<div id='main-column'></div>
+				<div id='main-column' class='span3'></div>
 				<span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
 
 				<?php end_slot() ?>
