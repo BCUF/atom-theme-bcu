@@ -7,7 +7,7 @@
 
     <?php slot('sidebar') ?>
 
-		<?php echo get_component('menu', 'staticPagesMenu') ?>
+		<?php/* echo get_component('menu', 'staticPagesMenu') ?>
 
 		<section>
 			<h2><?php echo __('Browse by') ?></h2>
@@ -17,8 +17,8 @@
 					<?php foreach ($browseMenu->getChildren() as $item): ?>
 						<li><a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
 					<?php endforeach; ?>
-				<?php endif; ?>
-			</ul>
+				<?php*/ endif; ?>
+			<!-- </ul> -->
 				<!-- </?php decorate_with('layout_2col.php') ?> -->
 
 				<!-- </?php slot('title') ?> -->
