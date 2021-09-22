@@ -95,10 +95,10 @@
           <!-- <h2></?php echo __('Browse by') ?></h2> -->
           <ul class="BCU-header-menu-ul">
             <?php $bcubrowseicon = [
-              'browseInformationObjects' => '<i class="bi bi-collection"></i>',
-              'browseSubjects' => '<i class="bi bi-collection"></i>',
-              'browsePlacess' => '<i class="bi bi-collection"></i>',
-              'browseActors' => '<i class="bi bi-collection"></i>', ]; ?>
+              'browseInformationObjects' => '/plugins/arBcuPlugin/images/collection.svg',
+              'browseSubjects' => '</plugins/arBcuPlugin/images/collection.svg',
+              'browsePlacess' => '/plugins/arBcuPlugin/images/collection.svg',
+              'browseActors' => '/plugins/arBcuPlugin/images/collection.svg', ]; ?>
             <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
             <?php if ($browseMenu->hasChildren()): ?>
               <?php foreach ($browseMenu->getChildren() as $item): ?>
