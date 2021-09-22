@@ -9,7 +9,7 @@
 
 		<?php echo get_component('menu', 'staticPagesMenu') ?>
 
-		<section class="span3 row">
+		<section>
 			<h2><?php echo __('Browse by') ?></h2>
 			<ul>
 				<?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
@@ -19,7 +19,7 @@
 					<?php endforeach; ?>
 				<?php endif; ?>
 			</ul>
-				<!-- <//?php decorate_with('layout_1col.php') ?> -->
+				<?php decorate_with('layout_2col.php') ?>
 
 				<?php slot('title') ?>
 					<!-- <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit" value="</?php echo __('Reset') ?>" />
