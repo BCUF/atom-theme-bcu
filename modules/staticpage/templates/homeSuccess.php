@@ -4,7 +4,7 @@
     <?php slot('title') ?>
       <h1><?php echo render_title($resource->getTitle(array('cultureFallback' => true))) ?></h1>
     <?php end_slot() ?>
-
+	<span class="span3">
     <?php slot('sidebar') ?>
 
 		<?php echo get_component('menu', 'staticPagesMenu') ?>
@@ -20,7 +20,7 @@
 				<?php endif; ?>
 			</ul>
 				<!-- <//?php decorate_with('layout_1col.php') ?> -->
-			<span class="span3">
+
 				<?php slot('title') ?>
 					<!-- <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit" value="</?php echo __('Reset') ?>" />
 					<input type="button" id="fullwidth-treeview-more-button" class="c-btn c-btn-submit" data-label="</?php echo __('%1% more') ?>" value="" /> -->
