@@ -1,20 +1,5 @@
 <div id="search-form-wrapper">
 
-  <?php echo get_component('menu', 'staticPagesMenu') ?>
-        
-    <section style="text-align:left;">
-      <!-- <h2></?php echo __('Browse by') ?></h2> -->
-      <ul class="BCU-header-menu-ul">
-        <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
-        <?php if ($browseMenu->hasChildren()): ?>
-          <?php foreach ($browseMenu->getChildren() as $item): ?>
-            <li class="BCU-header-menu-li"><a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
-          <?php endforeach; ?>
-        <?php endif; ?>
-      </ul>
-    </section>
-
-
   <form action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>"> 
 
     <input type="hidden" name="topLod" value="0"/>
