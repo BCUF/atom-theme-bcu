@@ -76,9 +76,7 @@
           <?php echo get_component('menu', 'quickLinksMenu') ?>
         </div>
         <div class="span6">
-          <div>
-            <?php echo get_component('menu', 'staticPagesMenu') ?>
-          </div>
+          <?php echo get_component('menu', 'staticPagesMenu') ?>
         </div>
         <div id="header-lvl2">
           <div class="row">
