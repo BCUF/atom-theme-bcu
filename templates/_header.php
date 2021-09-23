@@ -83,9 +83,9 @@
               <?php echo get_component('menu', 'headerBrowseMenu'); ?>
             </div>
 
-            <div id="header-search" class="span6">
-              <?php echo get_component('search', 'box') ?>
-            </div>
+            <!-- <div id="header-search" class="span6">
+              </?php echo get_component('search', 'box') ?>
+            </div> -->
 
           </div>
         </div>
