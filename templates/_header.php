@@ -79,9 +79,9 @@
         <div id="header-lvl2">
           <div class="row">
 
-            <div class="span6">
-              <?php echo get_component('menu', 'headerBrowseMenu') ?>
-            </div>
+            <!-- <div class="span6">
+              </?php echo get_component('menu', 'headerBrowseMenu') ?>
+            </div> -->
 
             <div id="header-search" class="span6">
               <?php echo get_component('search', 'box') ?>
