@@ -8,6 +8,8 @@
 <?php $browseMenu = QubitMenu::getByName('browse') ?>
 <?php if ($browseMenu->hasChildren()) { ?>
   <?php foreach ($browseMenu->getChildren() as $item) { ?>
-      <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>"><?php echo ($browseIcon[$item->name]); ?></a>
+      <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>">
+        <?php echo ($browseIcon[$item->name]); ?>
+      </a>
   <?php } ?>
 <?php } ?>
