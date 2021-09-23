@@ -7,8 +7,6 @@
 
     <?php slot('sidebar') ?>
 
-		<?php echo get_component('menu', 'staticPagesMenu') ?>
-
 		<section>
 				<!-- </?php decorate_with('layout_2col.php') ?> -->
 
