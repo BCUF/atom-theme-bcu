@@ -33,7 +33,7 @@
            <h1><?php echo __('BCU electronic archive') ?></h1>
 	      </div>
 
-        <div class="span4">
+        <div class="span6">
 
 
           <ul id="header-nav" class="nav nav-pills pull-right">
@@ -71,12 +71,11 @@
           </ul>
           
         </div>
-        <div class="span2" align="top">
-          <?php echo get_component('menu', 'clipboardMenu') ?>
-          <?php echo get_component('menu', 'quickLinksMenu') ?>
-        </div>
+
         <div class="span6">
           <?php echo get_component('menu', 'staticPagesMenu') ?>
+          <?php echo get_component('menu', 'clipboardMenu') ?>
+          <?php echo get_component('menu', 'quickLinksMenu') ?>
         </div>
         <div id="header-lvl2">
           <div class="row">
