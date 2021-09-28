@@ -76,10 +76,14 @@
           <?php echo get_component('menu', 'staticPagesMenu') ?>
           <?php echo get_component('menu', 'clipboardMenu') ?>
           <?php echo get_component('menu', 'quickLinksMenu') ?>
-          <span id="header-search" class="span6">
-              <?php echo get_component('search', 'box') ?>
-            </span>
         </div>
+        <!-- <div id="header-lvl2">
+          <div class="row"> -->
+        <div id="header-search" class="span6">
+          <?php echo get_component('search', 'box') ?>
+        </div>
+          <!-- </div>
+        </div> -->
       </div>
     </div>
 
