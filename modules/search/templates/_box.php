@@ -1,4 +1,4 @@
-<div id="search-form-wrapper">
+<span id="search-form-wrapper">
 
   <form action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>"> 
 
@@ -32,4 +32,4 @@
 
   </form>
 
-</div>
+</span>
