@@ -62,7 +62,7 @@
               // $local_url = "localhost";
               $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
-              if ((!$sf_user->isAuthenticated())&&(strpos($actual_link, $local_url) !== true)){
+              if (!((!$sf_user->isAuthenticated())&&(strpos($actual_link, $local_url) !== false))){
                 echo "<li>" . link_to(__('Log in'), array('module' => 'user', 'action' => 'login')) . "</li>";
               }
               
