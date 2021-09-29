@@ -71,20 +71,23 @@
           </ul>
           
         </div>
-
-        <div class="span6">
-          <?php echo get_component('menu', 'staticPagesMenu') ?>
-          <?php echo get_component('menu', 'clipboardMenu') ?>
-          <?php echo get_component('menu', 'quickLinksMenu') ?>
+      </div>
+      <div class="row">
+          <div class="span6">
+            <?php echo get_component('menu', 'staticPagesMenu') ?>
+            <?php echo get_component('menu', 'clipboardMenu') ?>
+            <?php echo get_component('menu', 'quickLinksMenu') ?>
+          </div>
           <div id="header-search" class="span6">
             <?php echo get_component('search', 'box') ?>
-        </div>
-        </div>
-        <!-- <div id="header-lvl2">
-          <div class="row"> -->
+          </div>
+          
+          <!-- <div id="header-lvl2">
+            <div class="row"> -->
 
-          <!-- </div>
-        </div> -->
+            <!-- </div>
+          </div> -->
+        </div>
       </div>
     </div>
 
