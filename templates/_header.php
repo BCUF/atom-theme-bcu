@@ -33,7 +33,7 @@
            <h1><?php echo __('BCU electronic archive') ?></h1>
 	      </div>
 
-        <div class="span5">
+        <div class="span5" style="width: 510px;">
 
 
           <ul id="header-nav" class="nav nav-pills pull-right">
