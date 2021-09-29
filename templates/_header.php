@@ -33,10 +33,10 @@
            <h1><?php echo __('BCU electronic archive') ?></h1>
 	      </div>
 
-        <div class="span5" style="width: 510px;">
+        <div class="span5">
 
 
-          <ul id="header-nav" class="nav nav-pills pull-right">
+          <ul style id="header-nav" class="nav nav-pills pull-right">
 
             <?php if ('fr' == $sf_user->getCulture()): ?>
               <li><?php echo link_to(__('Home'), '/index.php?sf_culture=fr') ?></li>
