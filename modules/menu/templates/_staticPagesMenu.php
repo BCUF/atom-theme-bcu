@@ -3,7 +3,7 @@
   'browseSubjects' => '<i class="bcu-browse-icon fa fa-tag" aria-hidden="true"></i>',
   'browsePlaces' => '<i class="bcu-browse-icon fa fa-map-marker" aria-hidden="true"></i>',
   'browseActors' => '<i class="bcu-browse-icon fa fa-users" aria-hidden="true"></i>', 
-  'browseHierarchy' => '<i class="fa fa-sitemap" aria-hidden="true"></i>',]; ?>
+  'browseHierarchy' => '<i class="bcu-browse-icon fa fa-sitemap" aria-hidden="true"></i>',]; ?>
 
 <?php $browseMenu = QubitMenu::getByName('browse') ?>
 <?php if ($browseMenu->hasChildren()) { ?>
