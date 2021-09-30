@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="row">
-          <div class="span6">
+          <div class="span6" style="vertical-align: top;">
             <?php echo get_component('menu', 'staticPagesMenu') ?>
             <?php echo get_component('menu', 'clipboardMenu') ?>
             <?php echo get_component('menu', 'quickLinksMenu') ?>
