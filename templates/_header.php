@@ -78,7 +78,8 @@
             <span title="Presse-papier"><?php echo get_component('menu', 'clipboardMenu') ?></span>
             <span title="Aide"><?php echo get_component('menu', 'quickLinksMenu') ?></span>
           </div>
-          <div id="header-search" class="span6">
+          <span class="span1"></span>
+          <div id="header-search" class="span5">
             <?php echo get_component('search', 'box') ?>
           </div>
           
