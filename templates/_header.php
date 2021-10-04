@@ -74,8 +74,8 @@
       </div>
       <div class="row">
           <div class="span6" style="vertical-align: top;">
-            <?php echo get_component('menu', 'staticPagesMenu') ?><span width="20px"></span>
-            <span title="Presse-papier"><?php echo get_component('menu', 'clipboardMenu') ?></span>
+            <?php echo get_component('menu', 'staticPagesMenu') ?>
+            <span title="Presse-papier" style="padding-left: 20px;"><?php echo get_component('menu', 'clipboardMenu') ?></span>
             <span title="Liens rapides"><?php echo get_component('menu', 'quickLinksMenu') ?></span>
           </div>
           <span class="span1"></span>
