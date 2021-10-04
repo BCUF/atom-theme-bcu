@@ -5,3 +5,10 @@
 <?php } ?>
 
 <?php echo get_component('informationobject', 'treeView'); ?>
+
+<?php if (!$showTreeview) { ?>
+    <?php echo get_component('term', 'treeView', ['browser' => false]); ?>
+  <?php } else { ?>
+
+    <?php echo get_component('term', 'treeView', ['browser' => false, 'tabs' => true, 'pager' => $listPager]); ?>
+<?php } ?>
