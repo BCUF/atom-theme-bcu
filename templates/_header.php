@@ -75,8 +75,19 @@
       <div class="row">
           <div class="span6" style="vertical-align: top;">
             <?php echo get_component('menu', 'staticPagesMenu') ?>
-            <span title="Presse-papier" style="padding-left: 70px;"><?php echo get_component('menu', 'clipboardMenu') ?></span>
-            <span title="Liens rapides"><?php echo get_component('menu', 'quickLinksMenu') ?></span>
+
+            <?php if ('fr' == $sf_user->getCulture()): ?>
+              <span title="Presse-papier" style="padding-left: 70px;"><?php echo get_component('menu', 'clipboardMenu') ?></span>
+            <?php else: ?>
+              <span title="Zwischenablage" style="padding-left: 70px;"><?php echo get_component('menu', 'clipboardMenu') ?></span>
+            <?php endif; ?>
+
+            <?php if ('fr' == $sf_user->getCulture()): ?>
+              <span title="Liens rapides"><?php echo get_component('menu', 'quickLinksMenu') ?></span>
+            <?php else: ?>
+              <span title="Direkter Link"><?php echo get_component('menu', 'quickLinksMenu') ?></span>
+            <?php endif; ?>
+            
           </div>
           <span class="span1"></span>
           <div id="header-search" class="span5">
