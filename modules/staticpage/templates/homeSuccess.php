@@ -23,6 +23,10 @@
 
 	<div class="page">
 
+		<section id="text-section">
+			<?php echo render_value($sf_data->getRaw('content')) ?>
+		</section>
+
 		<section style="display: inline;">
 		<div>
 			<ul class="thumbnails bcu-thumbnails">
@@ -59,9 +63,6 @@
 				<?php } ?>
 			</ul>
 		</div>
-		</section>
-		<section id="text-section">
-			<?php echo render_value($sf_data->getRaw('content')) ?>
 		</section>
 
 		<?php if (QubitAcl::check($resource, 'update')): ?>
