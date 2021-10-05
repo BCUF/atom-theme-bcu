@@ -6,9 +6,14 @@
 
 <?php echo get_component('informationobject', 'treeView'); ?>
 
-<?php if (!$showTreeview) { ?>
-    <?php echo get_component('term', 'treeView', ['browser' => false]); ?>
-  <?php } else { ?>
+<section>
 
-    <?php echo get_component('term', 'treeView', ['browser' => false, 'tabs' => true, 'pager' => $listPager]); ?>
-<?php } ?>
+    <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit bcu-input" value="<?php echo __('Reset') ?>" />
+    <input type="button" id="fullwidth-treeview-more-button" class="c-btn c-btn-submit bcu-input" data-label="<?php echo __('%1% more') ?>" value="" />
+    <?php echo image_tag('/vendor/jstree/themes/default/throbber.gif', array('id' => 'fullwidth-treeview-activity-indicator', 'alt' => __('Loading ...'))) ?>
+    <h2><?php echo __('Hierarchy') ?></h2>
+
+  <div id='main-column' class='span3'></div>
+  <span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
+
+</section>

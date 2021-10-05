@@ -8,24 +8,16 @@
     <?php slot('sidebar') ?>
 
 		<section>
-				<!-- </?php decorate_with('layout_2col.php') ?> -->
 
-				<!-- </?php slot('title') ?> -->
 					<input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit bcu-input" value="<?php echo __('Reset') ?>" />
 					<input type="button" id="fullwidth-treeview-more-button" class="c-btn c-btn-submit bcu-input" data-label="<?php echo __('%1% more') ?>" value="" />
 					<?php echo image_tag('/vendor/jstree/themes/default/throbber.gif', array('id' => 'fullwidth-treeview-activity-indicator', 'alt' => __('Loading ...'))) ?>
 					<h2><?php echo __('Hierarchy') ?></h2>
-				<!-- </?php end_slot() ?> -->
-
-				<!-- </?php slot('content') ?> -->
 
 				<div id='main-column' class='span3'></div>
 				<span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
 
-				<!-- </?php end_slot() ?> -->
 		</section>
-
-	<!-- <//?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?> -->
 
 	<?php end_slot() ?>
 
