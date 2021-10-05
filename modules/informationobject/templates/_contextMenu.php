@@ -6,7 +6,7 @@
 
 <?php echo get_component('informationobject', 'treeView'); ?>
 
-<?php slot('contextMenuSidebar') ?>
+<?php slot('contextMenuSidebar'); ?>
   <!-- <section> -->
 
     <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit bcu-input" value="<?php echo __('Reset') ?>" />
