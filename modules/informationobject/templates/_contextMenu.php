@@ -7,7 +7,7 @@
 <?php echo get_component('informationobject', 'treeView'); ?>
 
 <div>
-  <?php slot ?>
+  <?php slot('sidebar') ?>
     <section>
 
         <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit bcu-input" value="<?php echo __('Reset') ?>" />
