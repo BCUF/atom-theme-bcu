@@ -110,12 +110,12 @@
               <li><a href="#" id="add-criterion-or"><?php echo __('Or') ?></a></li>
               <li><a href="#" id="add-criterion-not"><?php echo __('Not') ?></a></li>
             </ul>
-          </div>
-          <div class="filter-row">
-            <div class="lod-filter">
-              <label>
-                <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
-              </label>
+            <div class="filter-row">
+              <div class="lod-filter">
+                <label>
+                  <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
+                </label>
+              </div>
             </div>
           </div>
         </div>
