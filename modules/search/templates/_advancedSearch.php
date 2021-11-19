@@ -113,6 +113,10 @@
           </div>
         </div>
 
+        <div class="alert alert-info date-range-help animateNicely">
+            <?php echo __('<a href="https://atomqa.local.bcu-fribourg.ch/plugins/arBcuPlugin/assets/aide_recherche_atom_fr.pdf">Aide à la recherche</a>') ?>
+        </div>
+
       </div>
 
       <p><?php echo __('Limit results to:') ?></p>
