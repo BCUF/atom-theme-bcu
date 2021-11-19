@@ -110,10 +110,10 @@
               <li><a href="#" id="add-criterion-or"><?php echo __('Or') ?></a></li>
               <li><a href="#" id="add-criterion-not"><?php echo __('Not') ?></a></li>
             </ul>
-            <div class="filter-row">
+            <div style="display: inline;" class="filter-row">
               <div class="lod-filter">
                 <label>
-                  <a href="#" style="display: inline list-item;" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
+                  <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
                 </label>
               </div>
             </div>
