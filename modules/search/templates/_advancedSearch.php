@@ -122,7 +122,7 @@
 
 
         <div class="alert alert-info date-range-help animateNicely">
-            <?php echo __('<a href="https://atomqa.local.bcu-fribourg.ch/plugins/arBcuPlugin/assets/aide_recherche_atom_fr.pdf">Aide à la recherche</a>') ?>
+            <?php echo __('<a href="https://atomqa.local.bcu-fribourg.ch/plugins/arBcuPlugin/assets/aide_recherche_atom_fr.pdf"><b>Aide à la recherche</b></a>') ?>
         </div>
 
       </div>
@@ -215,15 +215,8 @@
               <input type="radio" name="topLod" value="0" <?php echo !$topLod ? 'checked' : '' ?>>
               <?php echo __('All descriptions') ?>
             </label>
-            <label>
-                <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
-            </label>
           </div>
 
-        </div>
-
-        <div class="alert alert-info date-range-help animateNicely">
-            <?php echo __('Bli bla blo test 123 TWI meilleur secteur') ?>
         </div>
 
       </div>
