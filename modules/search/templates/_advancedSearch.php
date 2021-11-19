@@ -122,7 +122,7 @@
 
 
         <div class="alert alert-info date-range-help animateNicely">
-            <?php echo __('<a href="https://atomqa.local.bcu-fribourg.ch/plugins/arBcuPlugin/assets/aide_recherche_atom_fr.pdf"><b>Aide à la recherche</b></a>') ?>
+            <?php echo __('<a style="color: @moleson;" href="https://atomqa.local.bcu-fribourg.ch/plugins/arBcuPlugin/assets/aide_recherche_atom_fr.pdf">Aide à la recherche</a>') ?>
         </div>
 
       </div>
