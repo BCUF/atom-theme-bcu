@@ -113,7 +113,7 @@
             <div class="filter-row">
               <div class="lod-filter">
                 <label>
-                  <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
+                  <a href="#" style="display: inline list-item;" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
                 </label>
               </div>
             </div>
