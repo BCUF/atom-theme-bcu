@@ -111,14 +111,15 @@
               <li><a href="#" id="add-criterion-not"><?php echo __('Not') ?></a></li>
             </ul>
           </div>
-        </div>
-        <div class="filter-row">
-          <div class="lod-filter">
-            <label>
-              <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
-            </label>
+          <div class="filter-row">
+            <div class="lod-filter">
+              <label>
+                <a href="#" class="date-range-help-icon" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
+              </label>
+            </div>
           </div>
         </div>
+
 
         <div class="alert alert-info date-range-help animateNicely">
             <?php echo __('<a href="https://atomqa.local.bcu-fribourg.ch/plugins/arBcuPlugin/assets/aide_recherche_atom_fr.pdf">Aide à la recherche</a>') ?>
