@@ -30,7 +30,7 @@
         </div>
 
         <div id="header-title" class="span4">
-           <h1><?php echo __('BCU electronic archive') ?></h1>
+           <h1><?php echo __('Fri-Memoria') ?></h1>
 	      </div>
 
         <div id="header-nav-container" class="span5">
