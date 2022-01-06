@@ -29,9 +29,12 @@
           <?php endif; ?>
         </div>
 
-        <div id="header-title" class="span4">
-           <h1><?php echo __('Fri-Memoria') ?></h1>
-	      </div>
+        <!-- <div id="header-title" class="span4">
+           <h1><--?php echo __('Fri-Memoria') ?></h1>
+	      </div> -->
+        <div id="Fri-Memoria-logo" class="span4">
+          <?php echo link_to(image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg'?>
+        </div>
 
         <div id="header-nav-container" class="span5">
 
