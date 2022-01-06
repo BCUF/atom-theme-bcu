@@ -33,7 +33,7 @@
            <h1><--?php echo __('Fri-Memoria') ?></h1>
 	      </div> -->
         <div id="Fri-Memoria-logo" class="span4">
-          <img src="/plugins/arBcuPlugin/images/header-logo-bcu.svg">
+          <h1><img src="/plugins/arBcuPlugin/images/FriMemoria-logo.svg"></h1>
         </div>
 
         <div id="header-nav-container" class="span5">
