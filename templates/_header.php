@@ -21,7 +21,7 @@
     <div id="header-lvl1">
       <div class="row">
 
-        <div id="logo-and-name" class="span3">
+        <div id="logo-and-name" class="span3" style="padding-left: 20px;">
           <?php if ('fr' == $sf_user->getCulture()): ?>
             <h1><?php echo link_to(image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', array('alt' => __('Bibliothèque cantonale et universitaire'))), 'https://www.fr.ch/bcufr', array('rel' => 'home')) ?></h1>
           <?php else: ?>
