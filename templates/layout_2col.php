@@ -30,7 +30,7 @@
 
           <div id="sidebar">
 
-            <?php include_slot('sidebar') ?>
+            <!-- <--?php include_slot('sidebar') ?> -->
 
           </div>
 
