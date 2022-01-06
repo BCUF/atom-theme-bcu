@@ -21,7 +21,7 @@
     <div id="header-lvl1">
       <div class="row">
 
-        <div id="logo-and-name" class="span3" style="padding-left: 20px;">
+        <div id="logo-and-name" class="span3" >
           <?php if ('fr' == $sf_user->getCulture()): ?>
             <h1><?php echo link_to(image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', array('alt' => __('Bibliothèque cantonale et universitaire'))), 'https://www.fr.ch/bcufr', array('rel' => 'home')) ?></h1>
           <?php else: ?>
@@ -32,7 +32,7 @@
         <!-- <div id="header-title" class="span4">
            <h1><--?php echo __('Fri-Memoria') ?></h1>
 	      </div> -->
-        <div id="Fri-Memoria-logo" class="span4">
+        <div id="Fri-Memoria-logo" class="span4"style="padding-left: 20px;">
           <h1><img src="/plugins/arBcuPlugin/images/FriMemoria-logo.svg"></h1>
         </div>
 
