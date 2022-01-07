@@ -24,7 +24,7 @@
  * @subpackage model
  * @author Mike Cantelon <mike@artefactual.com>
  */
-class StaticPageHomeDataAction extends DefaultFullTreeViewAction
+class StaticPageIndexDataAction extends DefaultFullTreeViewAction
 {
   public function execute($request)
   {
