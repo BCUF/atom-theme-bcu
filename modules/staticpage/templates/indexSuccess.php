@@ -1,23 +1,23 @@
 <?php $menu = get_component('menu', 'staticPagesMenu') ?>
 <?php $layout = 'layout_1col' ?>
-<?php if (!empty($menu)) : ?>
-    <?php $layout = 'layout_2col' ?>
-    <?php slot('sidebar') ?>
 
-    <section>
+<?php $layout = 'layout_2col' ?>
+<?php slot('sidebar') ?>
 
-        <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit bcu-input" value="<?php echo __('Reset') ?>" />
-        <input type="button" id="fullwidth-treeview-more-button" class="c-btn c-btn-submit bcu-input" data-label="<?php echo __('%1% more') ?>" value="" />
-        <?php echo image_tag('/vendor/jstree/themes/default/throbber.gif', array('id' => 'fullwidth-treeview-activity-indicator', 'alt' => __('Loading ...'))) ?>
-        <h2><?php echo __('Hierarchy') ?></h2>
+<section>
 
-        <div id='main-column' class='span3'></div>
-        <span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
+    <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit bcu-input" value="<?php echo __('Reset') ?>" />
+    <input type="button" id="fullwidth-treeview-more-button" class="c-btn c-btn-submit bcu-input" data-label="<?php echo __('%1% more') ?>" value="" />
+    <?php echo image_tag('/vendor/jstree/themes/default/throbber.gif', array('id' => 'fullwidth-treeview-activity-indicator', 'alt' => __('Loading ...'))) ?>
+    <h2><?php echo __('Hierarchy') ?></h2>
 
-    </section>
-    
-    <?php end_slot() ?>
-<?php endif; ?>
+    <div id='main-column' class='span3'></div>
+    <span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
+
+</section>
+
+<?php end_slot() ?>
+
 <?php decorate_with($layout) ?>
 
 <?php slot('title') ?>
