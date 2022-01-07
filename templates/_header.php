@@ -48,9 +48,9 @@
             <?php endif; ?>
 
             <?php if ('fr' == $sf_user->getCulture()): ?>
-              <li><?php echo link_to(__('Contactez-nous'), 'https://www.fr.ch/contact?dir=BCUFR') ?></li>
+              <li><?php echo link_to(__('Contactez-nous'), 'https://www.fr.ch/bcu/contact') ?></li>
             <?php else: ?>
-              <li><?php echo link_to(__('Kontaktieren Sie uns'), 'https://www.fr.ch/de/kontakt?dir=BCUFR') ?></li>
+              <li><?php echo link_to(__('Kontaktieren Sie uns'), 'https://www.fr.ch/de/kub/kontakt') ?></li>
             <?php endif; ?>
 
             <?php foreach (array('fr', 'de') as $item): ?>
