@@ -1,6 +1,6 @@
 <?php
 
-class StaticPageIndexAction extends StaticPageIndexAction
+class StaticPageHomeAction extends StaticPageIndexAction
 {
     public function execute($request)
     {

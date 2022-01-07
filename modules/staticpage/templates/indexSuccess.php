@@ -3,6 +3,7 @@
 <?php if (!empty($menu)) : ?>
     <?php $layout = 'layout_2col' ?>
     <?php slot('sidebar') ?>
+
     <section>
 
         <input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit bcu-input" value="<?php echo __('Reset') ?>" />
@@ -14,6 +15,7 @@
         <span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
 
     </section>
+    
     <?php end_slot() ?>
 <?php endif; ?>
 <?php decorate_with($layout) ?>
