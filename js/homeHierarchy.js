@@ -54,7 +54,7 @@
             {
               // Get first page of results
               var queryString = "?nodeLimit=" + (pager.getSkip() + pager.getLimit());
-              return window.location.pathname + url + queryString;
+              return window.location.protocol + "//" + window.location.hostname + "/" + url + queryString;
             }
             else
             {
