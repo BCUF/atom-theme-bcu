@@ -18,3 +18,14 @@ homeSuccess:
     pager:
     treeViewPager:
     /plugins/arBcuPlugin/js/homeHierarchy:
+
+indexSuccess:
+  stylesheets:
+    /vendor/jstree/themes/default/style.min.css:
+    fullWidthTreeView:
+  javascripts:
+    /vendor/jstree/jstree.min.js:
+    treeviewTypes:
+    pager:
+    treeViewPager:
+    /plugins/arBcuPlugin/js/homeHierarchy:
