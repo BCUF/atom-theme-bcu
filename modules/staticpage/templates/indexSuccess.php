@@ -1,6 +1,6 @@
-<!-- <--?php $menu = get_component('menu', 'staticPagesMenu') ?>
-<--?php $layout = 'layout_1col' ?>
-<--?php if (!empty($menu)) : ?>-->
+<?php $menu = get_component('menu', 'staticPagesMenu') ?>
+<?php $layout = 'layout_1col' ?>
+<?php if (!empty($menu)) : ?>
     <?php $layout = 'layout_2col' ?>
     <?php slot('sidebar') ?>
 
