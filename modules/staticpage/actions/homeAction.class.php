@@ -11,6 +11,5 @@ class StaticPageHomeAction extends StaticPageIndexAction
             QubitAcl::forwardUnauthorized();
         }
         $this->itemsPerPage = sfConfig::get('app_treeview_full_items_per_page', 50);
-        parent::execute($request);
     }
 }
