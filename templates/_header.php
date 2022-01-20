@@ -30,11 +30,11 @@
         </div>
 
         <?php if ('fr' == $sf_user->getCulture()) : ?>
-          <div id="Fri-Memoria-logo" class="span4" style="padding-left: 20px;">
+          <div id="Fri-Memoria-logo" class="span3" style="padding-left: 20px;">
             <h1><img src="/plugins/arBcuPlugin/images/FriMemoria-logo_new.svg"></h1>
           </div>
         <?php else : ?>
-          <div id="Fri-Memoria-logo" class="span4" style="padding-left: 20px;">
+          <div id="Fri-Memoria-logo" class="span3" style="padding-left: 20px;">
             <h1><img src="/plugins/arBcuPlugin/images/FriMemoria-logo_new_DE.svg"></h1>
           </div>
         <?php endif; ?>
