@@ -51,9 +51,9 @@
             <?php endif; ?>
 
             <?php if ('fr' == $sf_user->getCulture()) : ?>
-              <li><?php echo link_to(__('Contactez-nous'), 'https://www.fr.ch/bcu/contact') ?></li>
+              <li><?php echo link_to(__('Contactez-nous'), 'mailto:fri-memoria@fr.ch') ?></li>
             <?php else : ?>
-              <li><?php echo link_to(__('Kontaktieren Sie uns'), 'https://www.fr.ch/de/kub/kontakt') ?></li>
+              <li><?php echo link_to(__('Kontaktieren Sie uns'), 'mailto:fri-memoria@fr.ch') ?></li>
             <?php endif; ?>
 
             <?php foreach (array('fr', 'de') as $item) : ?>
