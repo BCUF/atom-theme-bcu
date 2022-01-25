@@ -46,6 +46,7 @@
 						'browseMaps' => '/plugins/arBcuPlugin/images/cartes_plans.png',
 						'browseWebsites' => '/plugins/arBcuPlugin/images/websites.png',
 						'browseEBooks' => '/plugins/arBcuPlugin/images/e-books.png',
+						'browseBibliography' => '/plugins/arBcuPlugin/images/bibliographie_fribourgeoise.png',
 					]; ?>
 					<?php $MainNav = QubitMenu::getByName('MainNav'); ?>
 					<?php if ($MainNav->hasChildren()) { ?>
