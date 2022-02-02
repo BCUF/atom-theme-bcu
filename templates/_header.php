@@ -31,11 +31,11 @@
 
         <?php if ('fr' == $sf_user->getCulture()) : ?>
           <div id="Fri-Memoria-logo" class="span3" style="padding-left: 20px;">
-            <h1><img src="/plugins/arBcuPlugin/images/FriMemoria-logo_new.svg"></h1>
+            <h1><a href="/index.php?sf_culture=fr"><img src="/plugins/arBcuPlugin/images/FriMemoria-logo_new.svg"></a></h1>
           </div>
         <?php else : ?>
           <div id="Fri-Memoria-logo" class="span3" style="padding-left: 20px;">
-            <h1><img src="/plugins/arBcuPlugin/images/FriMemoria-logo_new_DE.svg"></h1>
+            <h1><a href="/index.php?sf_culture=de"><img src="/plugins/arBcuPlugin/images/FriMemoria-logo_new_DE.svg"></a></h1>
           </div>
         <?php endif; ?>
 
