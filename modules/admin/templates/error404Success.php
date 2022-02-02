@@ -1,17 +1,18 @@
 <section class="admin-message" id="error-404">
 
-    <!-- <h2> -->
-        <!-- <i class="fa fa-times"></i> -->
-        <?php if ('fr' == $sf_user->getCulture()) : ?>
-            <?php echo '<h2>Ce document est accessible sur le poste de consultation des Archives électroniques à la BCU-Centrale.</h2>' ?>
-        <?php else : ?>
-            <?php echo '<h2>Dieses Dokument ist an der Station der elektronische Archivierung in der KUB-Zentrale zu konsultieren.</h2>' ?>
-        <?php endif; ?>
-    <!-- </h2> -->
+    <!-- <i class="fa fa-times"></i> -->
+    <?php if ('fr' == $sf_user->getCulture()) : ?>
+        <?php echo '<h2>Ce document est accessible sur le poste de consultation des Archives électroniques à la BCU-Centrale.</h2>' ?>
+    <?php else : ?>
+        <?php echo '<h2>Dieses Dokument ist an der Station der elektronische Archivierung in der KUB-Zentrale zu konsultieren.</h2>' ?>
+    <?php endif; ?>
 
     <p>
-        <?php echo __('Did you type the URL correctly?'); ?><br />
-        <?php echo __('Did you follow a broken link blablabla?'); ?>
+    <?php if ('fr' == $sf_user->getCulture()) : ?>
+        <?php echo 'Ce poste de consultation se trouve dans l’espace public de la BCU-Centrale. Il vous donne accès à une sélection d’inventaires et de documents des collections patrimoniales (archives familiales, documents sonores et films) de la BCU. Pour toute question vous pouvez nous contacter.' ?>
+    <?php else : ?>
+        <?php echo 'Diese öffentliche Suchstation befindet sich in der KUB-Zentrale. Sie ermöglicht einen Zugang zu einer Auswahl von Inventaren und Dokumenten der Kulturgütersammlungen der Kantons- und Universitätsbibliothek (Familienarchive, Ton- und Filmdokumente). Bitte kontaktieren Sie uns für weitere Informationen.' ?>
+    <?php endif; ?>
     </p>
 
     <div class="tips">
