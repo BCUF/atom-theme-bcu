@@ -9,9 +9,9 @@
 
     <p>
     <?php if ('fr' == $sf_user->getCulture()) : ?>
-        <?php echo 'Ce poste de consultation se trouve dans l’espace public de la BCU-Centrale. Il vous donne accès à une sélection d’inventaires et de documents des collections patrimoniales (archives familiales, documents sonores et films) de la BCU. Pour toute question vous pouvez nous contacter.' ?>
+        <?php echo 'Ce poste de consultation se trouve dans l’espace public de la BCU-Centrale. Il vous donne accès à une sélection d’inventaires et de documents des collections patrimoniales (archives familiales, documents sonores et films) de la BCU. Pour toute question vous pouvez <a href="mailto:fri-memoria@fr.ch">nous contacter</a>.' ?>
     <?php else : ?>
-        <?php echo 'Diese öffentliche Suchstation befindet sich in der KUB-Zentrale. Sie ermöglicht einen Zugang zu einer Auswahl von Inventaren und Dokumenten der Kulturgütersammlungen der Kantons- und Universitätsbibliothek (Familienarchive, Ton- und Filmdokumente). Bitte kontaktieren Sie uns für weitere Informationen.' ?>
+        <?php echo 'Diese öffentliche Suchstation befindet sich in der KUB-Zentrale. Sie ermöglicht einen Zugang zu einer Auswahl von Inventaren und Dokumenten der Kulturgütersammlungen der Kantons- und Universitätsbibliothek (Familienarchive, Ton- und Filmdokumente). Bitte <a href="mailto:fri-memoria@fr.ch">kontaktieren Sie uns</a> für weitere Informationen.' ?>
     <?php endif; ?>
     </p>
 
