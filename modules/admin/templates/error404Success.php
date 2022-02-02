@@ -1,13 +1,13 @@
 <section class="admin-message" id="error-404">
 
-    <h2>
+    <!-- <h2> -->
         <!-- <i class="fa fa-times"></i> -->
         <?php if ('fr' == $sf_user->getCulture()) : ?>
-            <li><?php echo '<h3>Ce document est accessible sur le poste de consultation des Archives électroniques à la BCU-Centrale.</h3>' ?></li>
+            <?php echo '<h2>Ce document est accessible sur le poste de consultation des Archives électroniques à la BCU-Centrale.</h2>' ?>
         <?php else : ?>
-            <li><?php echo '<h3>Dieses Dokument ist an der Station der elektronische Archivierung in der KUB-Zentrale zu konsultieren.</h3>' ?></li>
+            <?php echo '<h2>Dieses Dokument ist an der Station der elektronische Archivierung in der KUB-Zentrale zu konsultieren.</h2>' ?>
         <?php endif; ?>
-    </h2>
+    <!-- </h2> -->
 
     <p>
         <?php echo __('Did you type the URL correctly?'); ?><br />
