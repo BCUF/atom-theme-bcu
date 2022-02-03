@@ -1,4 +1,4 @@
-<section class="admin-message" id="error-404">
+<section style="width: 60%;" class="admin-message" id="error-404">
 
     <!-- <i class="fa fa-times"></i> -->
     <?php if ('fr' == $sf_user->getCulture()) : ?>
