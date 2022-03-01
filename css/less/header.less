@@ -18,8 +18,9 @@
 @topBarBackgroundColor: #ccc;
 @topBarButtonHoverColor: @orange;
 
+
 #top-bar {
-  height: 50px;
+  height: 40px;
   background-color: @topBarBackgroundColor;
 }
 
@@ -55,7 +56,7 @@ header #logo {
 .top-item {
   display: block;
   float: right;
-  margin: 12px 11px 0 0;
+  margin: 7px 11px 0 0;
   background-color: @black;
   color: @white;
   .border-radius(4px);
@@ -234,7 +235,7 @@ nav > div {
 #add-menu,
 #clipboard-menu {
 
-  @side: 50px;
+  @side: 40px;
 
   // As text is hidden
   cursor: pointer;
@@ -249,7 +250,9 @@ nav > div {
     margin: 0;
     padding: 0;
     line-height: @side;
-    .square(@side);
+    width: 35px;
+    height: 40px;
+    // .square(@side);
   }
 
   > button {
@@ -453,6 +456,41 @@ nav > div {
   }
 }
 
+//browse menu
+
+.bcu-browse-link{
+  vertical-align: top;
+}
+
+.bcu-browse-icon{
+  color: #555555;
+  font-size: 20px;
+  line-height: 40px;
+  width: 35px;
+  height: 40px;
+  text-align: center;
+  margin-top: 3px;
+}
+.bcu-browse-icon:hover{
+  color: #0099b2;
+}
+
+//header-nav
+#header-nav-container {
+  width: 420px;
+  float: right;
+  margin-right: 4.5%;
+}
+
+//layout logo and title
+#logo-and-name {
+  width: 220px;
+}
+#header-title {
+  margin-left: 50px;
+}
+
+
 // Responsive design
 
 @media (min-width: 1200px) { }
@@ -508,6 +546,11 @@ nav > div {
 
   }
 
+  //header-nav
+  #header-nav-container {
+    width: 290px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -543,6 +586,10 @@ nav > div {
       }
     }
   }
+  //header-nav
+  #header-nav-container {
+    width: 100%;
+  }
 
 }
 
@@ -573,6 +620,10 @@ nav > div {
       float: none;
       left: 0; right: 0;
     }
+  }
+  //header-nav
+  #header-nav-container {
+    width: 100%;
   }
 
 }

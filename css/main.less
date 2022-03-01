@@ -56,6 +56,7 @@
 @linkColor: @black;
 @linkColorHover: @moleson;
 
+
 body {
   background-color: #FFFFFF;
 }
@@ -106,7 +107,7 @@ h1, h2, h3, h5, h6 {
 
 .btn-primary {
   color: @white;
-  backgroud-image: none;
+  background-image: none;
   background-color: @black;
   border-color: @black;
 }
@@ -138,13 +139,13 @@ h1, h2, h3, h5, h6 {
 
   form {
     position: relative; // Positiionate search autocomplete;
-    margin: 12px 0 0 0;
+    margin: 0 0 0 10px;
   }
 
   .search-popover {
-    left: 37px;
+    left: 0;
     top: 30px;
-    right: 33px;
+    right: 0;
   }
 
   // Make the border darker
@@ -248,27 +249,35 @@ h1, h2, h3, h5, h6 {
   }
 }
 
-.actions {
-  padding: 0px;
+.field a {
+  color: @moleson;
 }
-
+.field a:hover {
+  text-decoration: underline;
+}
+.page a {
+  color: @moleson;
+}
+.page a:hover {
+  text-decoration: underline;
+}
 // Responsive design
 
 @media (min-width: 1200px) {
   #header-search input[type=text] {
-    width: 900px;
+    width: 350px;
   }
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
   #header-search input[type=text] {
-    width: 800px;
+    width: 350px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
   #header-search input[type=text] {
-    width: 600px;
+    width: 290px;
   }
 }
 

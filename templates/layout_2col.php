@@ -45,7 +45,7 @@
             <?php include_slot('before-content') ?>
 
             <?php if (!include_slot('content')): ?>
-              <div id="content">
+              <div>
                 <?php echo $sf_content ?>
               </div>
             <?php endif; ?>
