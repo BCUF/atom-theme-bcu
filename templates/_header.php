@@ -51,9 +51,9 @@
             <?php endif; ?>
 
             <?php if ('fr' == $sf_user->getCulture()) : ?>
-              <span title="Conditions d\'utilisation"><?php echo get_component('menu', 'privacy') ?></span>
+              <li><?php echo link_to(__('Conditions d\'utilisation'), '/privacy?sf_culture=fr') ?></li>
             <?php else : ?>
-              <span title="Nutzungsbedingungen"><?php echo get_component('menu', 'privacy') ?></span>
+              <li><?php echo link_to(__('Nutzungsbedingungen'), '/privacy?sf_culture=de') ?></li>
             <?php endif; ?>
 
             <?php if ('fr' == $sf_user->getCulture()) : ?>
