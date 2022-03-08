@@ -75,7 +75,7 @@
             $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
             if ((!$sf_user->isAuthenticated()) && (strpos($actual_link, $local_url) !== false)) {
-              echo "<li>" . link_to(__('Log in'), array('module' => 'user', 'action' => 'login')) . "</li>";
+              echo "<li><a href='https://atomqa.local.bcu-fribourg.ch/index.php/user/login' title='Ouverture de session'><i class='buc-browse-icon bi bi-box-arrow-in-right' aria-hidden='true'></i></a></li>";
             }
 
             ?>
