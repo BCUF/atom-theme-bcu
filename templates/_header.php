@@ -51,6 +51,12 @@
             <?php endif; ?>
 
             <?php if ('fr' == $sf_user->getCulture()) : ?>
+              <li><?php echo link_to(__('privacy'), '/index.php?sf_culture=fr') ?></li>
+            <?php else : ?>
+              <li><?php echo link_to(__('privacy'), '/index.php?sf_culture=de') ?></li>
+            <?php endif; ?>
+
+            <?php if ('fr' == $sf_user->getCulture()) : ?>
               <li><?php echo mail_to('fri-memoria@fr.ch', 'Contactez-nous') ?></li>
             <?php else : ?>
               <li><?php echo mail_to('fri-memoria@fr.ch', 'Kontaktieren Sie uns') ?></li>
