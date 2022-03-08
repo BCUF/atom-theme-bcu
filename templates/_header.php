@@ -75,8 +75,13 @@
             $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
             if ((!$sf_user->isAuthenticated()) && (strpos($actual_link, $local_url) !== false)) {
-              echo '<li><a href="https://atomqa.local.bcu-fribourg.ch/index.php/user/login" title="Ouverture de session"><i class="	fa fa-sign-in" style="color: #555555;font-size: 20px;" aria-hidden="true"></i></a></li>';
-            }
+              if ('fr' == $sf_user->getCulture()) { 
+                echo '<li><a href="/user/login" title="Ouverture de session"><i class="	fa fa-sign-in" style="color: #555555;font-size: 20px;" aria-hidden="true"></i></a></li>';
+              }
+              else { 
+                echo '<li><a href="/user/login" title="Anmelden"><i class="	fa fa-sign-in" style="color: #555555;font-size: 20px;" aria-hidden="true"></i></a></li>';
+              }
+            }           
 
             ?>
 
