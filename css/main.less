@@ -68,12 +68,17 @@ a {
   color: @linkColor;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   color: @linkColorHover;
 }
 
-h1, h2, h3, h5, h6 {
+h1,
+h2,
+h3,
+h5,
+h6 {
   color: #000000;
 }
 
@@ -184,13 +189,13 @@ h1, h2, h3, h5, h6 {
     min-width: 220px;
     text-align: left;
     border: 2px solid #333;
-    @shadow:  2px  2px 0px rgba(255, 255, 255, .5),
-             -2px  2px 0px rgba(255, 255, 255, .5),
-             -2px -2px 0px rgba(255, 255, 255, .5),
-              2px -2px 0px rgba(255, 255, 255, .5);
+    @shadow: 2px 2px 0px rgba(255, 255, 255, .5),
+    -2px 2px 0px rgba(255, 255, 255, .5),
+    -2px -2px 0px rgba(255, 255, 255, .5),
+    2px -2px 0px rgba(255, 255, 255, .5);
     .box-shadow(@shadow);
 
-    li > a {
+    li>a {
       padding: 3px 20px 3px 10px;
     }
 
@@ -226,7 +231,7 @@ h1, h2, h3, h5, h6 {
   display: inline-block;
   margin-top: 3px;
 
-  &.open > button {
+  &.open>button {
 
     background-color: #FFFFFF;
 
@@ -235,13 +240,15 @@ h1, h2, h3, h5, h6 {
     }
   }
 
-  > button {
+  >button {
     &:before {
       color: #555555;
     }
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: #FFFFFF;
+
       &:before {
         color: @linkColorHover;
       }
@@ -252,15 +259,19 @@ h1, h2, h3, h5, h6 {
 .field a {
   color: @moleson;
 }
+
 .field a:hover {
   text-decoration: underline;
 }
+
 .page a {
   color: @moleson;
 }
+
 .page a:hover {
   text-decoration: underline;
 }
+
 // Responsive design
 
 @media (min-width: 1200px) {
@@ -285,62 +296,79 @@ h1, h2, h3, h5, h6 {
   #top-bar {
     .hide();
   }
+
   #logo-and-name h1 {
     margin: 6px 0 0 0;
     text-align: center;
   }
+
   #header {
     height: 180px;
     margin-left: -20px;
     margin-right: -20px;
   }
+
   #header-search {
     margin: 0 auto 0 auto;
+
     #search-form-wrapper {
       display: block;
       width: 90%;
       float: left;
     }
+
     .input-append {
       text-align: center;
       width: 100%;
       margin-bottom: 0;
     }
+
     form {
       text-align: center;
     }
+
     input[type=text] {
       width: 90%;
     }
   }
+
   #header-nav {
     display: block;
     clear: both;
   }
+
   #sidebar section h2 {
     display: none;
   }
+
   #sidebar section {
     width: 90%;
   }
+
   #sidebar {
     display: none;
   }
+
   #Fri-Memoria-logo {
     padding-right: 20px;
   }
+
   #header-nav-container {
     margin-right: 0;
   }
+
   #logo-and-name {
     padding-left: 20px;
   }
+
   #wrapper {
     margin-top: 20px;
   }
+
   #staticPagesMenu {
     padding-left: 20px;
   }
+
   #main-column h1 {
     margin-top: 100px;
   }
@@ -348,9 +376,10 @@ h1, h2, h3, h5, h6 {
 
 @media (max-width: 530px) {
   #header-search #search-form-wrapper {
-    width: 75%;
+    //width: 75%;
     margin-left: 30px;
   }
+
   #sidebar section {
     width: 75%;
     margin-left: 30px;
@@ -360,22 +389,26 @@ h1, h2, h3, h5, h6 {
 @media (max-width: 530px) {
   #header-search {
     #search-form-wrapper {
-      width: 70%;
+      //width: 70%;
       margin-left: 5%;
     }
+
     #clipboard-menu {
       width: 20%;
       margin-right: 5%;
       float: right;
     }
   }
+
   #sidebar section {
     width: 70%;
     margin-left: 5%;
   }
+
   #sidebar {
     display: none;
   }
+
   #Fri-Memoria-logo {
     padding-left: 20px;
   }
