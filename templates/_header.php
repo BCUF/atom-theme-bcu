@@ -39,6 +39,8 @@
           </div>
         <?php endif; ?>
 
+        <?php echo '<img id="feedback" src="/plugins/arBcuPlugin/images/feedbackIcon.svg"></img>' ?>
+
         <div id="header-nav-container" class="span5">
 
 
