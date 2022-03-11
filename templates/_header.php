@@ -39,7 +39,11 @@
           </div>
         <?php endif; ?>
 
-        <?php echo '<img id="feedback" src="/plugins/arBcuPlugin/images/feedbackIcon.svg"></img>' ?>
+        <?php if ('fr' == $sf_user->getCulture()) : ?>
+          <a id="feedback-link" href="#" target="blank" title="Votre avis nous intéresse"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIcon.svg"></img></a>
+        <?php else : ?>
+          <a id="feedback-link" href="#" target="blank" title="Ihre Meinung interessiert uns"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIcon.svg"></img></a>
+        <?php endif; ?>
 
         <div id="header-nav-container" class="span5">
 
@@ -77,13 +81,12 @@
             $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
             if ((!$sf_user->isAuthenticated()) && (strpos($actual_link, $local_url) !== false)) {
-              if ('fr' == $sf_user->getCulture()) { 
+              if ('fr' == $sf_user->getCulture()) {
                 echo '<li><a href="/user/login" title="Ouverture de session"><i class="	fa fa-sign-in" style="color: #555555;font-size: 20px;" aria-hidden="true"></i></a></li>';
-              }
-              else { 
+              } else {
                 echo '<li><a href="/user/login" title="Anmelden"><i class="	fa fa-sign-in" style="color: #555555;font-size: 20px;" aria-hidden="true"></i></a></li>';
               }
-            }           
+            }
 
             ?>
 
