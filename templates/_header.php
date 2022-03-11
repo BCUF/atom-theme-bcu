@@ -42,7 +42,7 @@
         <?php if ('fr' == $sf_user->getCulture()) : ?>
           <a id="feedback-link" href="#" target="blank" title="Votre avis nous intéresse !"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIconRight.svg"></img></a>
         <?php else : ?>
-          <a id="feedback-link" href="#" target="blank" title="Ihre Meinung ist gefragt !"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIconRightDE.svg"></img></a>
+          <a id="feedback-link" href="#" target="blank" title="Ihre Meinung ist uns wichtig !"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIconRightDE.svg"></img></a>
         <?php endif; ?>
 
         <div id="header-nav-container" class="span5">
