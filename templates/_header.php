@@ -48,9 +48,9 @@
 
         <!-- bouton feedback mobile -->
         <?php if ('fr' == $sf_user->getCulture()) : ?>
-          <a id="feedback-link-mobile" href="#" target="blank" title="Votre avis nous intéresse !"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIconRightSmall.svg"></img></a>
+          <a id="feedback-link-mobile" href="#" target="blank" title="Votre avis nous intéresse !"><img id="feedback-img-mobile" src="/plugins/arBcuPlugin/images/feedbackIconRightSmall.svg"></img></a>
         <?php else : ?>
-          <a id="feedback-link-mobile" href="#" target="blank" title="Ihre Meinung ist uns wichtig !"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIconRightSmall.svg"></img></a>
+          <a id="feedback-link-mobile" href="#" target="blank" title="Ihre Meinung ist uns wichtig !"><img id="feedback-img-mobile" src="/plugins/arBcuPlugin/images/feedbackIconRightSmall.svg"></img></a>
         <?php endif; ?>
 
         <div id="header-nav-container" class="span5">
