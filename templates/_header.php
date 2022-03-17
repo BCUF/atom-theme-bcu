@@ -39,6 +39,12 @@
           </div>
         <?php endif; ?>
 
+        <?php if ('fr' == $sf_user->getCulture()) : ?>
+          <a id="feedback-link" href="#" target="blank" title="Votre avis nous intéresse !"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIconRight.svg"></img></a>
+        <?php else : ?>
+          <a id="feedback-link" href="#" target="blank" title="Ihre Meinung ist uns wichtig !"><img id="feedback-img" src="/plugins/arBcuPlugin/images/feedbackIconRightDE.svg"></img></a>
+        <?php endif; ?>
+
         <div id="header-nav-container" class="span5">
 
 
@@ -48,6 +54,12 @@
               <li><?php echo link_to(__('Home'), '/index.php?sf_culture=fr') ?></li>
             <?php else : ?>
               <li><?php echo link_to(__('Home'), '/index.php?sf_culture=de') ?></li>
+            <?php endif; ?>
+
+            <?php if ('fr' == $sf_user->getCulture()) : ?>
+              <li><?php echo link_to(__('Conditions d\'utilisation'), '/privacy?sf_culture=fr') ?></li>
+            <?php else : ?>
+              <li><?php echo link_to(__('Nutzungsbedingungen'), '/privacy?sf_culture=de') ?></li>
             <?php endif; ?>
 
             <?php if ('fr' == $sf_user->getCulture()) : ?>
@@ -69,7 +81,11 @@
             $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
             if ((!$sf_user->isAuthenticated()) && (strpos($actual_link, $local_url) !== false)) {
-              echo "<li>" . link_to(__('Log in'), array('module' => 'user', 'action' => 'login')) . "</li>";
+              if ('fr' == $sf_user->getCulture()) {
+                echo '<li><a href="/user/login" title="Ouverture de session"><i class="	fa fa-sign-in" style="color: #555555;font-size: 20px;" aria-hidden="true"></i></a></li>';
+              } else {
+                echo '<li><a href="/user/login" title="Anmelden"><i class="	fa fa-sign-in" style="color: #555555;font-size: 20px;" aria-hidden="true"></i></a></li>';
+              }
             }
 
             ?>
@@ -79,7 +95,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="span6" style="vertical-align: top;">
+        <div id="staticPagesMenu" class="span6" style="vertical-align: top;">
           <?php echo get_component('menu', 'staticPagesMenu') ?>
 
           <?php if ('fr' == $sf_user->getCulture()) : ?>
