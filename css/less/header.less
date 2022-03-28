@@ -456,6 +456,25 @@ nav > div {
   }
 }
 
+//feedback button
+
+#feedback-img {
+  position: fixed;
+  width: 70px;
+  right: 0;
+  top: 17%;
+}
+#feedback-img-mobile {
+  position: fixed;
+  opacity: 30%;
+  width: 60px;
+  right: 1%;
+  top: 0;
+}
+#feedback-link:hover #feedback-img {
+  //fill: #B550AC;
+}
+
 //browse menu
 
 .bcu-browse-link{
@@ -477,7 +496,7 @@ nav > div {
 
 //header-nav
 #header-nav-container {
-  width: 420px;
+  width: 520px;
   float: right;
   margin-right: 4.5%;
 }
@@ -491,9 +510,20 @@ nav > div {
 }
 
 
+
 // Responsive design
 
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {}
+
+@media (min-width: 979px) {
+  //feedback
+  #feedback-link-mobile {
+  display: none;
+  }
+  #feedback-img-mobile {
+  display: none;
+  }
+}
 
 @media (max-width: 979px) {
 
@@ -550,7 +580,13 @@ nav > div {
   #header-nav-container {
     width: 290px;
   }
-
+  //feedback
+  #feedback-link {
+    display: none;
+  }
+  #feedback-img {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -590,7 +626,6 @@ nav > div {
   #header-nav-container {
     width: 100%;
   }
-
 }
 
 @media (max-width: 480px) {
