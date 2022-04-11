@@ -393,6 +393,8 @@ div#content > table.table {
 
   .facet-header {
     font-family: @sansFontFamily;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
   }
 
   .facet-body {
@@ -408,14 +410,18 @@ div#content > table.table {
   &.open {
     margin-top: @baseLineHeight/2;
     margin-bottom: @baseLineHeight/2;
+    background: none;
+    color: black;
+    text-transform: none;
+    padding: 0;
   }
 
   // Content of .facet-header for desktops
   h3 {
     text-transform: lowercase;
-    font-variant: small-caps;
+    font-variant: inherit;
     font-weight: normal;
-    font-size: 20px;
+    font-size: inherit;
     line-height: 20px;
     margin: 0 0 0 0;
     position: relative;
@@ -425,8 +431,12 @@ div#content > table.table {
   .facet-header a  {
     text-decoration: none;
     display: block;
-    padding: 4px 30px 6px 6px;
-    color: @gray;
+    //padding: 4px 30px 6px 6px;
+    //color: @gray;
+    background: none;
+    color: black;
+    text-transform: none;
+    padding: 0;
 
     &:hover {
       color: @white;
@@ -456,8 +466,12 @@ div#content > table.table {
   &.open {
 
     .facet-header a  {
-      background-color: @grayLight;
-      color: @white;
+      //background-color: @grayLight;
+      //color: @white;
+      background: none;
+      color: black;
+      text-transform: none;
+      padding: 0;
 
       // Change arrow icon
       &:after {
