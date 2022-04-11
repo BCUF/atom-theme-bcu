@@ -16,7 +16,7 @@
  */
 
 #wrapper {
-  background-image: url('../../images/separator.png');
+  background-image: none;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -767,8 +767,8 @@ div#content > table.table {
     font-size: @baseFontSize * 1.10;
     line-height: 38px;
     color: @orange;
-    border-top: 1px solid @borderLineColor;
-    border-bottom: 1px solid @borderLineColor;
+    border-top: 0;
+    border-bottom: 1px solid black;
     margin: 0;
     padding: 0 10px;
     //font-weight: bold;
@@ -848,13 +848,13 @@ div#content > table.table {
       width: 28%;
       padding: 1px 1% 32767px 1%; // I wish I could understand this!
       margin: 1px 0 -32767px 0;
-      text-align: right;
+      text-align: left;
       line-height: 20px;
 
       font-weight: normal;
       font-size: 13px;
       color: @grayLight;
-      border-right: 1px solid @borderLineColor;
+      border-right: 0;
 
     }
 
@@ -1082,8 +1082,8 @@ section .vcard:last-child > .field:last-child > div {
 
 .search-result {
 
-  padding: 10px;
-  border-bottom: 1px solid @grayLighter;
+  padding: 5px 0px 20px 0px;
+  border-bottom: 1px solid black;
   .clearfix();
 
   // First result with digital objects
