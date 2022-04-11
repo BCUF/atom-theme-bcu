@@ -59,6 +59,7 @@ a:hover {
   margin-top: 18px;
   margin-bottom: 10px;
   img {
+    display: none;
     float: left;
     margin-right: 8px;
   }
@@ -784,7 +785,7 @@ div#content > table.table {
     border-top: 0;
     border-bottom: 1px solid black;
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     //font-weight: bold;
   }
 
@@ -860,7 +861,7 @@ div#content > table.table {
 
       float: left;
       width: 28%;
-      padding: 1px 1% 32767px 1%; // I wish I could understand this!
+      padding: 1px 1% 32767px 0; // I wish I could understand this!
       margin: 1px 0 -32767px 0;
       text-align: left;
       line-height: 20px;
@@ -1140,6 +1141,8 @@ section .vcard:last-child > .field:last-child > div {
       img {
         max-width: 100%;
         max-height: 100%;
+        position: absolute;
+        left: 0;
       }
     }
 
@@ -1170,8 +1173,10 @@ section .vcard:last-child > .field:last-child > div {
 
   .title {
     font-size: @baseFontSize * 1.25; // Cancel #content p
-    margin-bottom: 0 !important;
+    //margin-bottom: 0 !important;
+    margin-bottom: 1em !important;
     margin-right: 25px !important;
+    white-space: normal;
     .text-overflow();
   }
 
