@@ -29,5 +29,5 @@ indexSuccess:
     pager:
     treeViewPager:
     /plugins/arBcuPlugin/js/homeHierarchy:
-    plugins/arBcuPlugin/ATOM-THEME-BCU/js/bcuCustom:
+    /plugins/arBcuPlugin/js/bcuCustom:
 
