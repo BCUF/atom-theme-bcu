@@ -14,7 +14,7 @@ class arBcuPluginConfiguration extends sfPluginConfiguration
     $context = $event->getSubject();
     $context->response->addStylesheet('/plugins/arBcuPlugin/css/min.css', 'last', array('media' => 'all'));
     //add custom js for read-more/less
-    $context->response->addJavaScript('/plugins/arBcuPlugin/js/bcuCustom.js');
+    $context->response->addJavaScript('/plugins/arBcuPlugin/js/bcuCustom.js', 'last');
   }
 
   public function initialize()
