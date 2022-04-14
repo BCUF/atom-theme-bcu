@@ -2,16 +2,16 @@ var Qubit = Qubit || {};
 
 // Usage: log('inside coolFunc',this,arguments);
 // http://paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-window.log = function()
-  {
-    log.history = log.history || [];
-    log.history.push(arguments);
+// window.log = function()
+//   {
+//     log.history = log.history || [];
+//     log.history.push(arguments);
 
-    if (this.console)
-    {
-      console.log( Array.prototype.slice.call(arguments) );
-    }
-  };
+//     if (this.console)
+//     {
+//       console.log( Array.prototype.slice.call(arguments) );
+//     }
+//   };
 
 // jQuery expander
 Drupal.behaviors.expander = {
@@ -23,7 +23,7 @@ Drupal.behaviors.expander = {
         if ($element.children().length !== 1 || !$element.children().first().is('ul')) {
           $element.expander({
             slicePoint: 255,
-            expandText: '&hearts;',
+            expandText: '<b>test</b><br>test;',
             expandPrefix: '... ',
             userCollapseText: '&spades;',
             widow: 4,
