@@ -23,9 +23,9 @@ Drupal.behaviors.expander = {
         if ($element.children().length !== 1 || !$element.children().first().is('ul')) {
           $element.expander({
             slicePoint: 255,
-            expandText: '',
+            expandText: '<span style="display: none;"></span>;',
             expandPrefix: '... ',
-            userCollapseText: '',
+            userCollapseText: '<span style="display: none;"></span>;',
             widow: 4,
             expandEffect: 'show'
           });
