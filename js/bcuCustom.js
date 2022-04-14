@@ -23,9 +23,9 @@ Drupal.behaviors.expander = {
         if ($element.children().length !== 1 || !$element.children().first().is('ul')) {
           $element.expander({
             slicePoint: 255,
-            expandText: '<img src="../../images/outline-add-circle-outline.svg">;',
+            expandText: '',
             expandPrefix: '... ',
-            userCollapseText: '&spades;',
+            userCollapseText: '',
             widow: 4,
             expandEffect: 'show'
           });
