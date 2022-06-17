@@ -35,6 +35,7 @@ class arBcuPluginConfiguration extends sfPluginConfiguration
  
     // Custom OAI set definitions
     QubitOai::addOaiSet(new QubitOaiBcuSet());
+    QubitOai::addOaiSet(new QubitOaiFondsRFrSet());
     
   }
 }
