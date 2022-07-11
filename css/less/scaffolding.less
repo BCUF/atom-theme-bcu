@@ -154,6 +154,10 @@ th {
   }
 
   li:not(:last-child) {
+    //text-decoration: underline;
+    color: @moleson;
+  }
+  li:not(:last-child):hover {
     text-decoration: underline;
   }
 
@@ -957,7 +961,7 @@ div#content>table.table {
       cursor: pointer;
     }
     a[href^="/index.php/"]:hover {
-      background-color: #0099b2;
+      background-color: @moleson;
       color: white;
     }
     
