@@ -13,6 +13,8 @@ class arBcuPluginConfiguration extends sfPluginConfiguration
     // Here we are including the CSS stylesheet build in our pages.
     $context = $event->getSubject();
     $context->response->addStylesheet('/plugins/arBcuPlugin/css/min.css', 'last', array('media' => 'all'));
+    //add custom js for read-more/less
+    $context->response->addJavaScript('/plugins/arBcuPlugin/js/bcuCustom.js', 'last');
   }
 
   public function initialize()
@@ -32,6 +34,10 @@ class arBcuPluginConfiguration extends sfPluginConfiguration
     $moduleDirs = sfConfig::get('sf_module_dirs');
     $moduleDirs[$this->rootDir.'/modules'] = false;
     sfConfig::set('sf_module_dirs', $moduleDirs);
+ 
+    // Custom OAI set definitions
+    QubitOai::addOaiSet(new QubitOaiBcuSet());
+    QubitOai::addOaiSet(new QubitOaiFondsRFrSet());
     
   }
 }

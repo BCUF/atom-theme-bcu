@@ -1,3 +1,5 @@
+<script src="../../../js/bcuCustom.js"></script>
+
 <?php $menu = get_component('menu', 'staticPagesMenu') ?>
 <?php $layout = 'layout_1col' ?>
 <?php if (!empty($menu)) : ?>
