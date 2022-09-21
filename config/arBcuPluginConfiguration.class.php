@@ -34,6 +34,10 @@ class arBcuPluginConfiguration extends sfPluginConfiguration
     $moduleDirs = sfConfig::get('sf_module_dirs');
     $moduleDirs[$this->rootDir.'/modules'] = false;
     sfConfig::set('sf_module_dirs', $moduleDirs);
+ 
+    // Custom OAI set definitions
+    QubitOai::addOaiSet(new QubitOaiBcuSet());
+    QubitOai::addOaiSet(new QubitOaiFondsRFrSet());
     
   }
 }
