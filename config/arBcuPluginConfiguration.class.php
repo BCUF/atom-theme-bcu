@@ -13,6 +13,8 @@ class arBcuPluginConfiguration extends sfPluginConfiguration
     // Here we are including the CSS stylesheet build in our pages.
     $context = $event->getSubject();
     $context->response->addStylesheet('/plugins/arBcuPlugin/css/min.css', 'last', array('media' => 'all'));
+    //add custom js for read-more/less
+    $context->response->addJavaScript('/plugins/arBcuPlugin/js/bcuCustom.js', 'last');
   }
 
   public function initialize()
