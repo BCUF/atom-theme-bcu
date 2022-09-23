@@ -237,7 +237,7 @@ th {
     display: inline-block;
     margin: 2px 0px;
     cursor: pointer;
-
+  
     i {
       font-size: 14px;
       color: @grayLight;
@@ -253,6 +253,26 @@ th {
       }
     }
 
+  }
+
+  a:not(.btn) {
+    color: @blue;
+    display: block;
+    padding: 2px 4px;
+
+    i {
+      font-size: 14px;
+      color: @grayLight;
+      margin-right: 4px;
+    }
+
+    &:hover {
+      background-color: @grayLighter;
+
+      i {
+        color: @orange;
+      }
+    }
   }
 
   a.btn {
