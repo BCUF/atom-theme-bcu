@@ -192,9 +192,6 @@ th {
 
 // Action icons (e.g. print reports)
 
-.clipboard-wide.added:before{
-  color: black;
-}
 
 #action-icons {
 
@@ -222,7 +219,11 @@ th {
       color: #049cdb;
       font-size: 12px;
 
+      .added:before{
+        color: black;
+      }  
     }
+    
     button.clipboard-wide:hover {
       // background-color: @grayLight;
       // color: white;
