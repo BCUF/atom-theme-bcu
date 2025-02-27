@@ -22,7 +22,7 @@ require_once sfConfig::get('sf_plugins_dir')
 
 class arBcuPluginConfiguration extends arDominionB5PluginConfiguration
 {
-    public static $summary = 'BCU Fribourg Custom B5 theme plugin, extension of arDominionB5Plugin without modifications.';
+    public static $summary = 'BCU Fribourg Custom B5 theme plugin';
     public static $version = '0.0.1';
 
     public function initialize()
