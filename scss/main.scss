@@ -19,6 +19,12 @@ Extend:
 
 */
 
+$fri-purple: #93278F;
+
 body{
     font-family: "Open Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.under-nav{
+    background-color: $fri-purple;
 }

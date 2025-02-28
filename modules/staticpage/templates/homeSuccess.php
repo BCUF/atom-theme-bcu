@@ -44,3 +44,46 @@
     </section>
   <?php end_slot(); ?>
 <?php } ?>
+
+<?php slot('main-nav'); ?>
+  <section style="display: inline;">
+			<div>
+				<ul class="thumbnails bcu-thumbnails">
+					<?php $thumbnails = [
+						'browsePrivateArchives' => '/plugins/arBcuPlugin/images/archives_privees.png',
+						'browseMusicalArchives' => '/plugins/arBcuPlugin/images/archives_musicales.png',
+						'browsePhotographicArchives' => '/plugins/arBcuPlugin/images/archives_photo.png',
+						'browseFilmArchives' => '/plugins/arBcuPlugin/images/archives_film_son.png',
+						'browseInstitutionalArchives' => '/plugins/arBcuPlugin/images/archives_institutions.png',
+						'browseFilmHeritage' => '/plugins/arBcuPlugin/images/patrimoine_film_son.png',
+						'browseManuscripts' => '/plugins/arBcuPlugin/images/livres_manuscrits.png',
+						'browseAncientPrints' => '/plugins/arBcuPlugin/images/imprimes_anciens_rares.png',
+						'browsePeriodicals' => '/plugins/arBcuPlugin/images/periodiques.png',
+						'browseMonographs' => '/plugins/arBcuPlugin/images/monographie.png',
+						'browsePress' => '/plugins/arBcuPlugin/images/presse.png',
+						'browsePosters' => '/plugins/arBcuPlugin/images/affiches_new.png',
+						'browseMaps' => '/plugins/arBcuPlugin/images/cartes_plans.png',
+						'browseWebsites' => '/plugins/arBcuPlugin/images/websites.png',
+						'browseEBooks' => '/plugins/arBcuPlugin/images/e-books.png',
+						'browseBibliography' => '/plugins/arBcuPlugin/images/bibliographie_fribourgeoise.png',
+					]; ?>
+					<?php $MainNav = QubitMenu::getByName('MainNav'); ?>
+					<?php if ($MainNav->hasChildren()) { ?>
+						<?php foreach ($MainNav->getChildren() as $item) { ?>
+							<li class="span2">
+								<a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
+									<img src="<?php echo ($thumbnails[$item->name]); ?>" alt="" href="#" class="">
+									<div class="bcu-overlay">
+										<div class="bcu-text">
+											<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>
+										</div>
+									</div>
+								</a>
+							</li>
+						<?php } ?>
+			<?php } ?>
+		</ul>
+	</div>
+</section>
+<?php end_slot(); ?>
+

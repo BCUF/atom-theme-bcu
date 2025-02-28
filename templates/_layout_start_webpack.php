@@ -10,8 +10,6 @@
     <?php echo get_component_slot('css'); ?>
   </head>
   <body class="d-flex flex-column min-vh-100 <?php echo $sf_context->getModuleName(); ?> <?php echo $sf_context->getActionName(); ?>">
-    <h1>NS TEST 2</h1>
     <?php echo get_component('default', 'tagManager', ['code' => 'noscript']); ?>
     <?php echo get_partial('header'); ?>
     <?php include_slot('pre'); ?>
-    <!-- <div><img src="/images/bcu-test.jpg" alt="test3"></div> -->
