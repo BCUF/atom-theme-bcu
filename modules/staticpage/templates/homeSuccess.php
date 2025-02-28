@@ -54,7 +54,7 @@
 
 <?php slot('main-nav'); ?>
 
-  <?php $thumbnails = [
+  <!-- ?php $thumbnails = [
 		'browsePrivateArchives' => '/plugins/arBcuPlugin/images/archives_privees.png',
 		'browseMusicalArchives' => '/plugins/arBcuPlugin/images/archives_musicales.png',
 		'browsePhotographicArchives' => '/plugins/arBcuPlugin/images/archives_photo.png',
@@ -71,6 +71,25 @@
 		'browseWebsites' => '/plugins/arBcuPlugin/images/websites.png',
 		'browseEBooks' => '/plugins/arBcuPlugin/images/e-books.png',
 		'browseBibliography' => '/plugins/arBcuPlugin/images/bibliographie_fribourgeoise.png',
+	]; ? -->
+
+<?php $thumbnails = [
+		'browsePrivateArchives' => '/images/test-a.jpg',
+		'browseMusicalArchives' => '/images/test-b.jpg',
+		'browsePhotographicArchives' => '/images/test-a.jpg',
+		'browseFilmArchives' => '/images/test-b.jpg',
+		'browseInstitutionalArchives' => '/images/test-a.jpg',
+		'browseFilmHeritage' => '/images/test-a.jpg',
+		'browseManuscripts' => '/images/test-b.jpg',
+		'browseAncientPrints' => '/images/test-a.jpg',
+		'browsePeriodicals' => '/images/test-b.jpg',
+		'browseMonographs' => '/images/test-a.jpg',
+		'browsePress' => '/images/test-b.jpg',
+		'browsePosters' => '/images/test-a.jpg',
+		'browseMaps' => '/images/test-b.jpg',
+		'browseWebsites' => '/images/test-a.jpg',
+		'browseEBooks' => '/images/test-b.jpg',
+		'browseBibliography' => '/images/test-a.jpg',
 	]; ?>
 
   <?php $MainNav = QubitMenu::getByName('MainNav'); ?>
