@@ -3,6 +3,9 @@
 <div id="wrapper" class="container-xxl pt-3 flex-grow-1">
   <?php echo get_partial('alerts'); ?>
   <div class="row">
+    <?php include_slot('bcu-filter'); ?>
+  </div>
+  <div class="row">
     <div id="sidebar" class="col-md-3">
       <?php include_slot('sidebar'); ?>
     </div>
