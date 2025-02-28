@@ -20,7 +20,7 @@
       <?php include_slot('after-content'); ?>
     </div>
   </div>
-  <div class="row">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
     <?php include_slot('main-nav'); ?>
   </div>
 </div>
