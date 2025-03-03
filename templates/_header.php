@@ -34,7 +34,6 @@
         class="fas fa-2x fa-fw fa-bars" 
         data-bs-toggle="tooltip"
         data-bs-placement="bottom"
-        title="<?php echo __('Toggle navigation'); ?>"
         aria-hidden="true">
       </i>
       <span class="visually-hidden"><?php echo __('Toggle navigation'); ?></span>

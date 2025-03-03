@@ -98,10 +98,10 @@
       <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
         <div class="col">
           <div class="card">
-          <img src="<?php echo ($thumbnails[$item->name]); ?>" class="card-img-top" alt="...">
+          <img src="<?php echo ($thumbnails[$item->name]); ?>" class="card-img-top" alt="<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>">
             <div class="card-body">
               <h5 class="card-title"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
-                <p class="card-text">Description de la carte 2.</p>
+                <!-- <p class="card-text">Description de la carte 2.</p> -->
               </div>
             </div>
           </div>
