@@ -2,7 +2,7 @@
 
 <?php slot('bcu-filter'); ?>
   <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1">
-    <?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ?>
+    <!-- ?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ? -->
     <?php echo get_component('search', 'box'); ?>
   </div>
 <?php end_slot(); ?>
@@ -33,10 +33,10 @@
     </section>
   <?php } ?>
 
-  <?php echo get_component('default', 'popular', [
-      'limit' => 10,
+  <!-- ?php echo get_component('default', 'popular', [
+      'limit' => 3,
       'sf_cache_key' => $sf_user->getCulture(),
-  ]); ?>
+  ]); ? -->
 
 <?php end_slot(); ?>
 
@@ -51,6 +51,17 @@
     </section>
   <?php end_slot(); ?>
 <?php } ?>
+
+
+<?php slot('popular'); ?>
+<h1>popular top 3 test</h1>
+<h2>dont forget to remove this part</h2>
+  <?php echo get_component('default', 'popular', [
+      'limit' => 3,
+      'sf_cache_key' => $sf_user->getCulture(),
+  ]); ?>
+<?php end_slot(); ?>
+
 
 <?php slot('main-nav'); ?>
 

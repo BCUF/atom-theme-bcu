@@ -87,3 +87,13 @@ body{
         color: $fri-purple;
     }
 }
+
+a:link {
+    color: $fri-link;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $fri-purple;
+    text-decoration: none;
+}
