@@ -28,8 +28,8 @@ $fri-grey: #555;
 
 
 // to test if orange is replaces by purple
-$orange: $fri-purple !default;
-
+// not working
+$primary: $fri-purple !default;
 
 
 body{
@@ -74,21 +74,26 @@ body{
     border-color: $fri-purple;
 }
 
-.page{
-    a{
-        color: $fri-link;
-    }
-    a:link{
-        color: $fri-link;
-    }
-}
-.page{
-    a:hover{
-        color: $fri-purple;
-    }
-}
+// .page{
+//     a{
+//         color: $fri-link;
+//     }
+//     a:link{
+//         color: $fri-link;
+//     }
+// }
+// .page{
+//     a:hover{
+//         color: $fri-purple;
+//     }
+// }
 
 a:link {
+    color: $fri-link;
+    text-decoration: none;
+}
+
+a:visited {
     color: $fri-link;
     text-decoration: none;
 }
@@ -97,3 +102,11 @@ a:hover {
     color: $fri-purple;
     text-decoration: none;
 }
+
+.text-primary {
+    color: $fri-purple !important;
+}
+
+// .main-filter{
+//     height: 80px;
+// }
