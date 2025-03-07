@@ -53,16 +53,25 @@
   <?php end_slot(); ?>
 <?php } ?>
 
+<?php slot('main-links'); ?>
 
-<?php slot('popular'); ?>
-<h1>popular top 3 test</h1>
-<h2>dont forget to remove this part</h2>
-  <?php echo get_component('default', 'popular', [
-      'limit' => 3,
-      'sf_cache_key' => $sf_user->getCulture(),
-  ]); ?>
+  <?php $MainNav = QubitMenu::getByName('MainLinks'); ?>
+	<?php if ($MainNav->hasChildren()) { ?>
+		<?php foreach ($MainNav->getChildren() as $item) { ?>
+      <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
+                <p class="card-text"><?php echo esc_entities($item->getDescription(['cultureFallback' => true])); ?></p>
+              </div>
+            </div>
+          </div>
+        </a>
+    <?php } ?>
+  <?php } ?>
+							
 <?php end_slot(); ?>
-
 
 <?php slot('main-nav'); ?>
 
