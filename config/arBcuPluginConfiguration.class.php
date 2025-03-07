@@ -29,6 +29,11 @@ class arBcuPluginConfiguration extends arDominionB5PluginConfiguration
     {
         parent::initialize();
 
+        // sfConfig::set('sf_web_images_dir_name', array_merge(
+        //     [$this->'/plugins/arBcuPlugins/images'],
+        //     sfConfig::get('sf_web_images_dir_name')
+        // ));
+
         // Add this plugin templates before arDominionB5Plugin
         sfConfig::set('sf_decorator_dirs', array_merge(
             [$this->rootDir.'/templates'],

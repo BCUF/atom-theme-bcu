@@ -4,7 +4,7 @@
   <div class="d-flex justify-content-center main-filter">
   <!-- <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1"> -->
     <!-- ?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ? -->
-    <?php echo get_component('search', 'box'); ?>
+    <?php echo get_component('search', 'box2'); ?>
   </div>
 <?php end_slot(); ?>
 
