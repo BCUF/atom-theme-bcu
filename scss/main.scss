@@ -107,6 +107,11 @@ a:hover {
     color: $fri-purple !important;
 }
 
-// .main-filter{
-//     height: 80px;
-// }
+.bcu .card{
+    transition: transform 0.3s ease;
+}
+  
+.bcu .card:hover {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}

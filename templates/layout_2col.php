@@ -22,13 +22,9 @@
     </div>
   </div>
 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      <?php include_slot('main-links'); ?>
-  </div>
-
-
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      <?php include_slot('main-nav'); ?>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 bcu">
+    <?php include_slot('main-links'); ?>  
+    <?php include_slot('main-nav'); ?>
   </div>
 </div>
 

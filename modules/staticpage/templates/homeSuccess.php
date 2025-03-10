@@ -55,12 +55,12 @@
 
 <?php slot('main-links'); ?>
 
-  <?php $MainNav = QubitMenu::getByName('MainLinks'); ?>
-	<?php if ($MainNav->hasChildren()) { ?>
-		<?php foreach ($MainNav->getChildren() as $item) { ?>
+  <?php $MainLinks = QubitMenu::getByName('MainLinks'); ?>
+	<?php if ($MainLinks->hasChildren()) { ?>
+		<?php foreach ($MainLinks->getChildren() as $item) { ?>
       <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
         <div class="col">
-          <div class="card">
+          <div class="card bcu">
             <div class="card-body">
               <h5 class="card-title"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
                 <p class="card-text"><?php echo esc_entities($item->getDescription(['cultureFallback' => true])); ?></p>
@@ -115,10 +115,14 @@
 
   <?php $MainNav = QubitMenu::getByName('MainNav'); ?>
 	<?php if ($MainNav->hasChildren()) { ?>
+
+  
+
+
 		<?php foreach ($MainNav->getChildren() as $item) { ?>
       <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
         <div class="col">
-          <div class="card">
+          <div class="card bcu">
           <img src="<?php echo ($thumbnails[$item->name]); ?>" class="card-img-top" alt="<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>">
             <div class="card-body">
               <h5 class="card-title"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
