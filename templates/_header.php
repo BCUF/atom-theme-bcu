@@ -59,10 +59,5 @@
 </header>
 
 <?php if (sfConfig::get('app_toggleDescription') && !empty(sfConfig::get('app_siteDescription'))) { ?>
-  <!-- <div class="bg-secondary text-white"> -->
-  <div class="under-nav">
-    <div class="container-xl py-1 under-nav">
-      <!--?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ? -->
-    </div>
-  </div>
+  <div class="color-line line1"></div>
 <?php } ?>

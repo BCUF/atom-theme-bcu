@@ -36,9 +36,6 @@ body{
     font-family: "Open Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.under-nav{
-    background-color: $fri-purple;
-}
 
 .navbar-dark {
     background-color: white !important;
@@ -114,4 +111,17 @@ a:hover {
 .bcu .card:hover {
     transform: scale(1.1);
     filter: grayscale(100%);
+}
+
+.card-img-top {
+    border-bottom: 4px solid $fri-purple;
+}
+
+.color-line {
+    height: 8px;
+    width: 100%;
+}
+  
+.line1 {
+    background-color: $fri-purple;
 }

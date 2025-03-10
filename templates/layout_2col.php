@@ -7,10 +7,10 @@
     <?php include_slot('bcu-filter'); ?>
   </div>
   <div class="row">
-    <div id="sidebar" class="col-md-3">
+    <div id="sidebar" class="col-md-4">
       <?php include_slot('sidebar'); ?>
     </div>
-    <div id="main-column" role="main" class="col-md-9">
+    <div id="main-column" role="main" class="col-md-8">
       <?php include_slot('title'); ?>
       <?php include_slot('before-content'); ?>
       <?php if (!include_slot('content')) { ?>
