@@ -8,6 +8,17 @@
 
 <?php echo get_component('default', 'updateCheck'); ?>
 
+<?php
+  // check if the current page is the main page 
+  // is used to display or not the filter in the navbar
+  function isMainPageUrl() {
+    $current_url = $_SERVER['REQUEST_URI'];
+    $pattern = '/^\/?index\.php\/?(?:\?.*)?$/';
+    return preg_match($pattern, $current_url);
+  }
+
+?>
+
 <?php if ($sf_user->isAdministrator() && '' === (string) QubitSetting::getByName('siteBaseUrl')) { ?>
   <div class="alert alert-warning rounded-0 text-center mb-0" role="alert">
     <?php echo link_to(__('Please configure your site base URL'), 'settings/siteInformation', ['class' => 'alert-link']); ?>
@@ -39,10 +50,12 @@
       <span class="visually-hidden"><?php echo __('Toggle navigation'); ?></span>
     </button>
     <div class="collapse navbar-collapse flex-wrap justify-content-end me-1" id="navbar-content">
+    <?php if (!isMainPageUrl()) { ?>
       <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1">
         <?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ?>
         <?php echo get_component('search', 'box'); ?>
       </div>
+      <?php }?>
       <div class="d-flex flex-nowrap flex-column flex-lg-row align-items-strech align-items-lg-center">
         <ul class="navbar-nav mx-lg-2">
           <?php echo get_component('menu', 'mainMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ?>

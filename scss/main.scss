@@ -31,11 +31,9 @@ $fri-grey: #555;
 // not working
 $primary: $fri-purple !default;
 
-
 body{
     font-family: "Open Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 
 .navbar-dark {
     background-color: white !important;
@@ -124,4 +122,41 @@ a:hover {
   
 .line1 {
     background-color: $fri-purple;
+}
+
+.form-required {
+    color: $fri-purple;
+}
+
+.atom-icon-link:hover i, .atom-icon-link:focus i {
+    color: $fri-purple;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: $fri-purple;
+    content: var(--bs-breadcrumb-divider, "»");
+}
+
+.atom-btn-white:hover i, .atom-btn-white:focus i {
+    color: $fri-purple;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: $fri-link;
+    text-decoration: none;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: $fri-purple;
+    background-color: #fff;
+    border-color: #ced4da #ced4da #fff;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: $fri-link;
+    transition: color .15sease-in-out, background-color .15sease-in-out, border-color .15sease-in-out;
 }
