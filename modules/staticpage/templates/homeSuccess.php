@@ -34,11 +34,6 @@
     </section>
   <?php } ?>
 
-  <!-- ?php echo get_component('default', 'popular', [
-      'limit' => 3,
-      'sf_cache_key' => $sf_user->getCulture(),
-  ]); ? -->
-
 <?php end_slot(); ?>
 
 <div class="page p-3">
@@ -95,22 +90,24 @@
 	]; ? -->
 
 <?php $thumbnails = [
-		'browsePrivateArchives' => '/images/test-a.jpg',
-		'browseMusicalArchives' => '/images/test-b.jpg',
-		'browsePhotographicArchives' => '/images/test-a.jpg',
-		'browseFilmArchives' => '/images/test-b.jpg',
-		'browseInstitutionalArchives' => '/images/test-a.jpg',
-		'browseFilmHeritage' => '/images/test-a.jpg',
-		'browseManuscripts' => '/images/test-b.jpg',
-		'browseAncientPrints' => '/images/test-a.jpg',
-		'browsePeriodicals' => '/images/test-b.jpg',
-		'browseMonographs' => '/images/test-a.jpg',
-		'browsePress' => '/images/test-b.jpg',
-		'browsePosters' => '/images/test-a.jpg',
-		'browseMaps' => '/images/test-b.jpg',
-		'browseWebsites' => '/images/test-a.jpg',
-		'browseEBooks' => '/images/test-b.jpg',
-		'browseBibliography' => '/images/test-a.jpg',
+		'thumbnail01' => '/images/thumbnail01.jpg',
+		'thumbnail02' => '/images/thumbnail02.jpg',
+		'thumbnail03' => '/images/thumbnail03.jpg',
+		'thumbnail04' => '/images/thumbnail04.jpg',
+		'thumbnail05' => '/images/thumbnail05.jpg',
+		'thumbnail06' => '/images/thumbnail06.jpg',
+		'thumbnail07' => '/images/thumbnail07.jpg',
+		'thumbnail08' => '/images/thumbnail08.jpg',
+    'thumbnail09' => '/images/thumbnail09.jpg',
+    'thumbnail10' => '/images/thumbnail10.jpg',
+    'thumbnail11' => '/images/thumbnail11.jpg',
+    'thumbnail12' => '/images/thumbnail12.jpg',
+    'thumbnail13' => '/images/thumbnail13.jpg',
+		'thumbnail14' => '/images/thumbnail14.jpg',
+		'thumbnail15' => '/images/thumbnail15.jpg',
+		'thumbnail16' => '/images/thumbnail16.jpg',
+    'thumbnail17' => '/images/thumbnail17.jpg',
+		'thumbnail18' => '/images/thumbnail18.jpg'
 	]; ?>
 
   <?php $MainNav = QubitMenu::getByName('MainNav'); ?>
