@@ -72,7 +72,7 @@
     </div>
     <input
       id="search-box-input"
-      class="form-control form-control-sm dropdown-toggle"
+      class="form-control form-control-lg dropdown-toggle"
       type="search"
       name="query"
       autocomplete="off"

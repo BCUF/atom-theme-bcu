@@ -56,14 +56,13 @@ Clone repository **_within AtoM's plugin folder_** and delete git related files.
 
 ### install NS
 added the line bellow in docker-compose.dev.yml
-RUN apk add --update npm
+* RUN apk add --update npm
 
 then copy package.json, package-lock.json and webpack.config.js in /atom/src
 
-mkdir /atom/.cache/
-export CYPRESS_CACHE_FOLDER=/atom/.cache/
-
-npm install
-npm run build
+* mkdir /atom/.cache/
+* export CYPRESS_CACHE_FOLDER=/atom/.cache/
+* npm install
+* npm run build
 
 
