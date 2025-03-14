@@ -94,6 +94,27 @@
 $MainNav = QubitMenu::getByName('MainNav');
 if ($MainNav->hasChildren()) {
 
+  // $thumbnails = [
+  //   'thumbnail01' => '/plugins/arBcuPlugin/images/thumbnail01.jpg',
+  //   'thumbnail02' => '/plugins/arBcuPlugin/images/thumbnail02.jpg',
+  //   'thumbnail03' => '/plugins/arBcuPlugin/images/thumbnail03.jpg',
+  //   'thumbnail04' => '/plugins/arBcuPlugin/images/thumbnail04.jpg',
+  //   'thumbnail05' => '/plugins/arBcuPlugin/images/thumbnail05.jpg',
+  //   'thumbnail06' => '/plugins/arBcuPlugin/images/thumbnail06.jpg',
+  //   'thumbnail07' => '/plugins/arBcuPlugin/images/thumbnail07.jpg',
+  //   'thumbnail08' => '/plugins/arBcuPlugin/images/thumbnail08.jpg',
+  //   'thumbnail09' => '/plugins/arBcuPlugin/images/thumbnail09.jpg',
+  //   'thumbnail10' => '/plugins/arBcuPlugin/images/thumbnail10.jpg',
+  //   'thumbnail11' => '/plugins/arBcuPlugin/images/thumbnail11.jpg',
+  //   'thumbnail12' => '/plugins/arBcuPlugin/images/thumbnail12.jpg',
+  //   'thumbnail13' => '/plugins/arBcuPlugin/images/thumbnail13.jpg',
+  //   'thumbnail14' => '/plugins/arBcuPlugin/images/thumbnail14.jpg',
+  //   'thumbnail15' => '/plugins/arBcuPlugin/images/thumbnail15.jpg',
+  //   'thumbnail16' => '/plugins/arBcuPlugin/images/thumbnail16.jpg',
+  //   'thumbnail17' => '/plugins/arBcuPlugin/images/thumbnail17.jpg',
+  //   'thumbnail18' => '/plugins/arBcuPlugin/images/thumbnail18.jpg'
+  // ]; 
+
   $thumbnails = [
     'thumbnail01' => '/images/thumbnail01.jpg',
     'thumbnail02' => '/images/thumbnail02.jpg',
