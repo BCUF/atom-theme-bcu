@@ -180,3 +180,8 @@ a:hover {
     overflow: hidden;
     min-height: 3rem; /* Ajuster selon la taille du texte */
 }
+
+.slick-dots li.slick-active button .slick-dot-icon {
+    color: $fri-purple;
+    opacity: .75;
+}
