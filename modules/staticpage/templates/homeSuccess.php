@@ -8,9 +8,6 @@
   </div>
 <?php end_slot(); ?>
 
-<?php slot('title'); ?>
-  <h1><?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?></h1>
-<?php end_slot(); ?>
 
 <?php slot('sidebar'); ?>
 
@@ -37,6 +34,9 @@
 <?php end_slot(); ?>
 
 <div class="page p-3">
+  <h1>
+    <?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?>
+  </h1>
   <?php echo render_value_html($sf_data->getRaw('content')); ?>
 </div>
 
@@ -58,7 +58,7 @@
           <div class="card bcu">
             <div class="card-body">
               <h5 class="card-title"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
-                <p class="card-text"><?php echo esc_entities($item->getDescription(['cultureFallback' => true])); ?></p>
+                <p class="card-text card-body-text"><?php echo esc_entities($item->getDescription(['cultureFallback' => true])); ?></p>
               </div>
             </div>
           </div>

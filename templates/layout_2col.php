@@ -7,14 +7,14 @@
     <?php include_slot('bcu-filter'); ?>
   </div>
   <div class="row">
-    <div id="sidebar" class="col-md-4">
+    <div id="sidebar" class="col-md-4 mb-2">
       <?php include_slot('sidebar'); ?>
     </div>
-    <div id="main-column" role="main" class="col-md-8">
-      <?php include_slot('title'); ?>
+    <div id="main-column" role="main" class="col-md-8 mb-2">
       <?php include_slot('before-content'); ?>
       <?php if (!include_slot('content')) { ?>
         <div id="content">
+        <?php include_slot('title'); ?>
           <?php echo $sf_content; ?>
         </div>
       <?php } ?>
@@ -25,7 +25,7 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 bcu">
     <?php include_slot('main-links'); ?>  
     <?php include_slot('main-nav'); ?>
-  </div>
+</div>
 </div>
 
 <?php echo get_partial('layout_end'); ?>
