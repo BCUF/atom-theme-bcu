@@ -164,3 +164,19 @@ a:hover {
 .card-body-text{
     color: #212529;
 }
+
+.card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Maximum 2 lignes */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 3rem; /* Ajuste selon la taille du texte */
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Maximum 2 lignes */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 3rem; /* Ajuster selon la taille du texte */
+}

@@ -89,32 +89,32 @@
 		'browseBibliography' => '/plugins/arBcuPlugin/images/bibliographie_fribourgeoise.png',
 	]; ? -->
 
-<?php $thumbnails = [
-		'thumbnail01' => '/images/thumbnail01.jpg',
-		'thumbnail02' => '/images/thumbnail02.jpg',
-		'thumbnail03' => '/images/thumbnail03.jpg',
-		'thumbnail04' => '/images/thumbnail04.jpg',
-		'thumbnail05' => '/images/thumbnail05.jpg',
-		'thumbnail06' => '/images/thumbnail06.jpg',
-		'thumbnail07' => '/images/thumbnail07.jpg',
-		'thumbnail08' => '/images/thumbnail08.jpg',
+<?php 
+
+$MainNav = QubitMenu::getByName('MainNav');
+if ($MainNav->hasChildren()) {
+
+  $thumbnails = [
+    'thumbnail01' => '/images/thumbnail01.jpg',
+    'thumbnail02' => '/images/thumbnail02.jpg',
+    'thumbnail03' => '/images/thumbnail03.jpg',
+    'thumbnail04' => '/images/thumbnail04.jpg',
+    'thumbnail05' => '/images/thumbnail05.jpg',
+    'thumbnail06' => '/images/thumbnail06.jpg',
+    'thumbnail07' => '/images/thumbnail07.jpg',
+    'thumbnail08' => '/images/thumbnail08.jpg',
     'thumbnail09' => '/images/thumbnail09.jpg',
     'thumbnail10' => '/images/thumbnail10.jpg',
     'thumbnail11' => '/images/thumbnail11.jpg',
     'thumbnail12' => '/images/thumbnail12.jpg',
     'thumbnail13' => '/images/thumbnail13.jpg',
-		'thumbnail14' => '/images/thumbnail14.jpg',
-		'thumbnail15' => '/images/thumbnail15.jpg',
-		'thumbnail16' => '/images/thumbnail16.jpg',
+    'thumbnail14' => '/images/thumbnail14.jpg',
+    'thumbnail15' => '/images/thumbnail15.jpg',
+    'thumbnail16' => '/images/thumbnail16.jpg',
     'thumbnail17' => '/images/thumbnail17.jpg',
-		'thumbnail18' => '/images/thumbnail18.jpg'
-	]; ?>
-
-  <?php $MainNav = QubitMenu::getByName('MainNav'); ?>
-	<?php if ($MainNav->hasChildren()) { ?>
-
-  
-
+    'thumbnail18' => '/images/thumbnail18.jpg'
+  ]; 
+?>
 
 		<?php foreach ($MainNav->getChildren() as $item) { ?>
       <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
@@ -129,7 +129,7 @@
           </div>
         </a>
     <?php } ?>
-  <?php } ?>
+<?php } ?>
 							
 <?php end_slot(); ?>
 
