@@ -51,7 +51,7 @@
 <?php slot('main-links'); ?>
 
   <?php $MainLinks = QubitMenu::getByName('MainLinks'); ?>
-	<?php if ($MainLinks->hasChildren()) { ?>
+	<?php if (isset($MainLinks) && $MainLinks->hasChildren()) { ?>
 		<?php foreach ($MainLinks->getChildren() as $item) { ?>
       <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
         <div class="col">
@@ -92,7 +92,7 @@
 <?php 
 
 $MainNav = QubitMenu::getByName('MainNav');
-if ($MainNav->hasChildren()) {
+if (isset($MainNav) && $MainNav->hasChildren()) {
 
   // $thumbnails = [
   //   'thumbnail01' => '/plugins/arBcuPlugin/images/thumbnail01.jpg',
