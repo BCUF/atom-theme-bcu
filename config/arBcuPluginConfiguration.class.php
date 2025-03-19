@@ -47,5 +47,9 @@ class arBcuPluginConfiguration extends arDominionB5PluginConfiguration
             unset($plugins[$key]);
         }
         $this->configuration->setPlugins(array_merge([$this->name], $plugins));
+
+        // Custom OAI set definitions
+        QubitOai::addOaiSet(new QubitOaiBcuSet());
+        QubitOai::addOaiSet(new QubitOaiFondsRFrSet());
     }
 }
