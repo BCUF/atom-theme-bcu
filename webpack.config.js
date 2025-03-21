@@ -75,7 +75,7 @@ module.exports = {
   mode: mode,
   entry: entry,
   output: {
-    path: __dirname + "/dist",
+    path: __dirname + "/plugins/arBcuPlugin/dist",
     filename: "js/[name].bundle.[contenthash].js",
     clean: true,
   },
