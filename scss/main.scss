@@ -69,20 +69,6 @@ body{
     border-color: $fri-purple;
 }
 
-// .page{
-//     a{
-//         color: $fri-link;
-//     }
-//     a:link{
-//         color: $fri-link;
-//     }
-// }
-// .page{
-//     a:hover{
-//         color: $fri-purple;
-//     }
-// }
-
 a:link {
     color: $fri-link;
     text-decoration: none;
@@ -105,7 +91,7 @@ a:hover {
 .bcu .card{
     transition: transform 0.3s ease;
 }
-  
+
 .bcu .card:hover {
     // transform: scale(1.1);
     filter: grayscale(100%);
