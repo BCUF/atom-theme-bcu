@@ -66,3 +66,10 @@ then copy package.json, package-lock.json and webpack.config.js in /atom/src
 * npm run build
 
 
+After compiled the js css copy them in the pluging running:
+cp -r dist/ plugins/arBcuPlugin/
+
+check the source paths in _layout_start.php if they start with "/plugins/arBcuPlugin/dist/..."
+
+
+
