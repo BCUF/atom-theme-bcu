@@ -31,9 +31,9 @@
       <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-0 me-0" href="<?php echo url_for('@homepage'); ?>" title="<?php echo __('Home'); ?>" rel="home">
         <?php if (sfConfig::get('app_toggleLogo')) { ?>
           <?php if ('de' == $sf_user->getCulture()) : ?>
-            <?php echo image_tag('/plugins/arBcuPlugin/images/FriMemoria-logo_new_DE.svg', ['alt' => __('Fri-memoria logo'), 'class' => 'd-inline-block my-2 me-3', 'height' => '35']); ?>
+            <?php echo image_tag('/plugins/arBcuPlugin/images/FriMemoria-logo_new_DE.svg', ['alt' => __('Fri-memoria logo'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
           <?php else : ?>
-            <?php echo image_tag('/plugins/arBcuPlugin/images/FriMemoria-logo_new.svg', ['alt' => __('Fri-memoria logo'), 'class' => 'd-inline-block my-2 me-3', 'height' => '35']); ?>
+            <?php echo image_tag('/plugins/arBcuPlugin/images/FriMemoria-logo_new.svg', ['alt' => __('Fri-memoria logo'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
           <?php endif; ?>
         <?php } ?>
         <?php if (sfConfig::get('app_toggleTitle') && !empty(sfConfig::get('app_siteTitle'))) { ?>
@@ -43,11 +43,11 @@
 
       <?php if ('de' == $sf_user->getCulture()) : ?>
         <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-0 me-0" href="<?php echo url_for('https://www.fr.ch/kub'); ?>" title="Kantons-und Universitätsbibliothek" rel="">
-          <?php echo image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', ['alt' => __('Kantons-und Universitätsbibliothek'), 'class' => 'd-inline-block my-2 me-3', 'height' => '35']); ?>
+          <?php echo image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', ['alt' => __('Kantons-und Universitätsbibliothek'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
         </a>
       <?php else : ?>
         <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-0 me-0" href="<?php echo url_for('https://www.fr.ch/bcufr'); ?>" title="Bibliothèque cantonale et universitaire" rel="">
-          <?php echo image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', ['alt' => __('Bibliothèque cantonale et universitaire'), 'class' => 'd-inline-block my-2 me-3', 'height' => '35']); ?>
+          <?php echo image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', ['alt' => __('Bibliothèque cantonale et universitaire'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
         </a>
       <?php endif; ?>
 
