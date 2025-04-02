@@ -13,7 +13,7 @@
   // is used to display or not the filter in the navbar
   function isMainPageUrl() {
     $current_url = $_SERVER['REQUEST_URI'];
-    $pattern = '/^\/?index\.php\/?(?:\?.*)?$/';
+    $pattern = '#^(/*index\.php/?|/)(\?.*)?$#';
     return preg_match($pattern, $current_url);
   }
 
