@@ -191,3 +191,15 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button {
   display: none;
 }
+
+#search-box{
+    max-width:none!important;
+}
+
+.home #wrapper .main-filter form.my-2 {
+    margin: 0!important;
+}
+
+.home #wrapper .main-filter{
+    --bs-gutter-x: 0!important;
+}

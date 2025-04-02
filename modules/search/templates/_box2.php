@@ -1,6 +1,6 @@
 <form
   id="search-box"
-  class="d-flex flex-grow-1 my-2"
+  class="d-flex flex-grow-1 pb-3"
   role="search"
   action="<?php echo url_for(['module' => 'informationobject', 'action' => 'browse']); ?>">
   <h2 class="visually-hidden"><?php echo __('Search'); ?></h2>
