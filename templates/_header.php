@@ -41,16 +41,6 @@
         <?php } ?>
       </a>
 
-      <?php if ('de' == $sf_user->getCulture()) : ?>
-        <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-0 me-0" href="<?php echo url_for('https://www.fr.ch/kub'); ?>" title="Kantons-und Universitätsbibliothek" rel="">
-          <?php echo image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', ['alt' => __('Kantons-und Universitätsbibliothek'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
-        </a>
-      <?php else : ?>
-        <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-0 me-0" href="<?php echo url_for('https://www.fr.ch/bcufr'); ?>" title="Bibliothèque cantonale et universitaire" rel="">
-          <?php echo image_tag('/plugins/arBcuPlugin/images/header-logo-bcu.svg', ['alt' => __('Bibliothèque cantonale et universitaire'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
-        </a>
-      <?php endif; ?>
-
     <?php } ?>
     <button class="navbar-toggler atom-btn-secondary my-2 me-1 px-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false">
       <i 
