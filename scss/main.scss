@@ -88,12 +88,15 @@ a:hover {
     color: $fri-purple !important;
 }
 
-.bcu .card{
+.bcu-thumbnail{
     transition: transform 0.3s ease;
 }
 
-.bcu .card:hover {
-    // transform: scale(1.1);
+// .bcu .card:hover {
+//     filter: grayscale(100%);
+// }
+
+.bcu-thumbnail:hover, .bcu-thumbnail:focus {
     filter: grayscale(100%);
 }
 
@@ -151,13 +154,17 @@ a:hover {
     color: #212529;
 }
 
-.card-title {
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Maximum 2 lignes */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    min-height: 3rem; /* Ajuste selon la taille du texte */
+.card-title-img {
+    margin-bottom: 0;
 }
+
+// .card-title {
+//     display: -webkit-box;
+//     -webkit-line-clamp: 2; /* Maximum 2 lignes */
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//     min-height: 3rem; /* Ajuste selon la taille du texte */
+// }
 
 .card-text {
     display: -webkit-box;

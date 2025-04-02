@@ -102,7 +102,7 @@ if (isset($MainNav) && $MainNav->hasChildren()) {
           <div class="card bcu">
           <img src="<?php echo ($thumbnails[$item->name]); ?>" class="card-img-top" alt="<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>">
             <div class="card-body">
-              <h5 class="card-title"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
+              <h5 class="card-title card-title-img"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
                 <!-- <p class="card-text">Description de la carte 2.</p> -->
               </div>
             </div>
