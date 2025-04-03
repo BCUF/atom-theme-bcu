@@ -70,6 +70,18 @@
         <?php echo __('Advanced search'); ?>
       </a>
     </div>
+    <?php
+    $search_placeholder = "";
+    if ('de' == $sf_user->getCulture()) {
+      $search_placeholder = "Suche nach dem Freiburger Kulturerbe";
+    }
+    else if('fr' == $sf_user->getCulture()){
+      $search_placeholder = "Rechercher le patrimoine fribourgeois";
+    }
+    else{
+      $search_placeholder = sfConfig::get('app_ui_label_globalSearch');
+    } 
+    ?>
     <input
       id="search-box-input"
       class="form-control form-control-lg dropdown-toggle"
@@ -77,7 +89,7 @@
       name="query"
       autocomplete="off"
       value="<?php echo $sf_request->query; ?>"
-      placeholder="<?php echo sfConfig::get('app_ui_label_globalSearch'); ?>"
+      placeholder="<?php echo $search_placeholder; ?>"
       data-url="<?php echo url_for(['module' => 'search', 'action' => 'autocomplete']); ?>"
       data-bs-toggle="dropdown"
       aria-label="<?php echo sfConfig::get('app_ui_label_globalSearch'); ?>"
