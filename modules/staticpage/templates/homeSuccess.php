@@ -2,12 +2,9 @@
 
 <?php slot('bcu-filter'); ?>
   <div class="d-flex justify-content-center main-filter">
-  <!-- <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1"> -->
-    <!-- ?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ? -->
     <?php echo get_component('search', 'box2'); ?>
   </div>
 <?php end_slot(); ?>
-
 
 <?php slot('sidebar'); ?>
 
@@ -103,7 +100,6 @@ if (isset($MainNav) && $MainNav->hasChildren()) {
           <img src="<?php echo ($thumbnails[$item->name]); ?>" class="card-img-top" alt="<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>">
             <div class="card-body">
               <h5 class="card-title card-title-img"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
-                <!-- <p class="card-text">Description de la carte 2.</p> -->
               </div>
             </div>
           </div>

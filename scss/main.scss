@@ -100,9 +100,9 @@ a:hover {
     filter: grayscale(100%);
 }
 
-.card-img-top {
-    border-bottom: 4px solid $fri-purple;
-}
+// .card-img-top {
+//     border-bottom: 4px solid $fri-purple;
+// }
 
 .color-line {
     height: 8px;
@@ -166,13 +166,13 @@ a:hover {
 //     min-height: 3rem; /* Ajuste selon la taille du texte */
 // }
 
-.card-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Maximum 2 lignes */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    min-height: 3rem; /* Ajuster selon la taille du texte */
-}
+// .card-text {
+//     display: -webkit-box;
+//     -webkit-line-clamp: 2; /* Maximum 2 lignes */
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//     min-height: 3rem; /* Ajuster selon la taille du texte */
+// }
 
 .slick-dots li.slick-active button .slick-dot-icon {
     color: $fri-purple;
@@ -202,4 +202,52 @@ input[type="search"]::-webkit-search-results-button {
 
 .home #wrapper .main-filter{
     --bs-gutter-x: 0!important;
+}
+
+.input-group-lg>.form-control, .input-group-lg>.form-select, .input-group-lg>.input-group-text, .input-group-lg>.btn {
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+}
+
+.home h1, section.card > h2, h5.card-title, h6, .home #search-box2 input, h2.accordion-header > button, article.search-result a.h5, section> h2 {
+    font-weight: 600!important;
+    font-size: 1.5rem!important;
+}
+ 
+.home section.card {
+    font-weight: 600!important;
+}
+ 
+div.card-body > h5, .home .list-group-flush > .list-group-item {
+    color: black;
+}
+ 
+.home div.page p, .home p.card-body-text, div.card-body > h5, .home .list-group-flush > .list-group-item {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+}
+
+
+
+.home div#content, .home section.card, .home div.card, .home #search-box input {
+    border: 1px solid black; 
+}
+
+.home .list-group-flush>.list-group-item {
+    border-bottom: 1px solid black; 
+}
+
+
+div.card > img.card-img-top {
+    border-bottom: 0;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Maximum 2 lignes */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 4rem; /* Ajuster selon la taille du texte */
 }
