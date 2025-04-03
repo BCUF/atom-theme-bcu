@@ -1,5 +1,5 @@
 <form
-  id="search-box"
+  id="search-box box2"
   class="d-flex flex-grow-1 pb-3"
   role="search"
   action="<?php echo url_for(['module' => 'informationobject', 'action' => 'browse']); ?>">
