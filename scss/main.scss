@@ -99,8 +99,7 @@ a:hover {
 .bcu-thumbnail:hover .card-body,
 .bcu-thumbnail:focus .card-body,
 .bcu-thumbnail:focus-visible .card-body {
-    background-color: #e9ecef; /* ou la couleur de ton choix */
-    filter: grayscale(100%);
+    background-color: #e9ecef;
 }
 
 .bcu-thumbnail:hover, .bcu-thumbnail:focus {
