@@ -1,7 +1,6 @@
 <?php echo get_partial('layout_start'); ?>
 
-<div id="wrapper" class="container-xxl pt-3 flex-grow-1">
-<!-- <div id="wrapper" class="container-fluid pt-3 flex-grow-1"> -->
+<div id="wrapper" class="container-xxl py-3 flex-grow-1">
   <?php echo get_partial('alerts'); ?>
   <div class="row my-5 mx-0">
     <?php include_slot('bcu-filter'); ?>
