@@ -92,17 +92,20 @@ a:hover {
     transition: transform 0.3s ease;
 }
 
-// .bcu .card:hover {
-//     filter: grayscale(100%);
-// }
+.bcu-thumbnail .card-body {
+    transition: background-color 0.3s ease;
+}
+  
+.bcu-thumbnail:hover .card-body,
+.bcu-thumbnail:focus .card-body,
+.bcu-thumbnail:focus-visible .card-body {
+    background-color: #e9ecef; /* ou la couleur de ton choix */
+    filter: grayscale(100%);
+}
 
 .bcu-thumbnail:hover, .bcu-thumbnail:focus {
     filter: grayscale(100%);
 }
-
-// .card-img-top {
-//     border-bottom: 4px solid $fri-purple;
-// }
 
 .color-line {
     height: 8px;
@@ -158,33 +161,10 @@ a:hover {
     margin-bottom: 0;
 }
 
-// .card-title {
-//     display: -webkit-box;
-//     -webkit-line-clamp: 2; /* Maximum 2 lignes */
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
-//     min-height: 3rem; /* Ajuste selon la taille du texte */
-// }
-
-// .card-text {
-//     display: -webkit-box;
-//     -webkit-line-clamp: 2; /* Maximum 2 lignes */
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
-//     min-height: 3rem; /* Ajuster selon la taille du texte */
-// }
-
 .slick-dots li.slick-active button .slick-dot-icon {
     color: $fri-purple;
     opacity: .75;
 }
-
-// input[type="search"]::-webkit-search-decoration,
-// input[type="search"]::-webkit-search-cancel-button,
-// input[type="search"]::-webkit-search-results-button,
-// input[type="search"]::-webkit-search-results-decoration {
-//   display: none;
-// }
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
@@ -229,29 +209,15 @@ div.card-body > h5, .home .list-group-flush > .list-group-item {
     margin-bottom: 0;
 }
 
+.home .list-group-item{
+    border: 0px;
+}
+
 
 
 .home div#content, .home section.card, .home div.card, .home #search-box input {
     border: 1px solid black; 
 }
-
-// .home .list-group-flush>.list-group-item {
-//     border-bottom: 1px solid black; 
-// }
-
-// .list-group-item.custom-item-bl {
-//     position: relative;
-//     display: block;
-//     padding: .5rem 1rem;
-//     color: #000;
-//     background-color: #fff;
-//     border: 1px solid #000;
-// }
-
-
-// div.card > img.card-img-top {
-//     border-bottom: 0;
-// }
 
 .card-text {
     display: -webkit-box;

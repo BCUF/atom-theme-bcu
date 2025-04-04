@@ -52,10 +52,10 @@
 		<?php foreach ($MainLinks->getChildren() as $item) { ?>
       <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
         <div class="col">
-          <div class="card bcu">
+          <div class="card bcu bcu-card">
             <div class="card-body">
               <h5 class="card-title"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
-                <p class="card-text card-body-text"><?php echo esc_entities($item->getDescription(['cultureFallback' => true])); ?></p>
+                <p class="card-text card-body-text mt-2"><?php echo esc_entities($item->getDescription(['cultureFallback' => true])); ?></p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ if (isset($MainNav) && $MainNav->hasChildren()) {
 		<?php foreach ($MainNav->getChildren() as $item) { ?>
       <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
         <div class="col">
-          <div class="card bcu">
+          <div class="card bcu bcu-card">
           <img src="<?php echo ($thumbnails[$item->name]); ?>" class="card-img-top" alt="<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>">
             <div class="card-body">
               <h5 class="card-title card-title-img"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
