@@ -10,6 +10,7 @@
       <?php include_slot('sidebar'); ?>
     </div>
     <div id="main-column" role="main" class="col-md-8 mb-2">
+      <?php include_slot('title'); ?>
       <?php include_slot('before-content'); ?>
       <?php if (!include_slot('content')) { ?>
         <div id="content">
@@ -24,7 +25,7 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 bcu">
     <?php include_slot('main-links'); ?>  
     <?php include_slot('main-nav'); ?>
-</div>
+  </div>
 </div>
 
 <?php echo get_partial('layout_end'); ?>
