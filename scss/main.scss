@@ -193,6 +193,12 @@ input[type="search"]::-webkit-search-results-button {
     font-weight: 600!important;
     font-size: 1.5rem!important;
 }
+
+.home .h6 {
+    font-weight: 600!important;
+    font-size: 1.5rem!important;
+}
+
  
 .home section.card {
     font-weight: 600!important;
@@ -201,6 +207,12 @@ input[type="search"]::-webkit-search-results-button {
 div.card-body > h5, .home .list-group-flush > .list-group-item {
     color: black;
 }
+
+.home #search-box-input {
+    font-weight: 600!important;
+    font-size: 1.5rem!important;
+}
+
  
 .home div.page p, .home p.card-body-text, div.card-body > h5, .home .list-group-flush > .list-group-item {
     font-size: 1.5rem;
@@ -224,4 +236,8 @@ div.card-body > h5, .home .list-group-flush > .list-group-item {
     -webkit-box-orient: vertical;
     overflow: hidden;
     min-height: 4rem; /* Ajuster selon la taille du texte */
+}
+
+.search-result .text-primary {
+    font-weight: 600!important;
 }
