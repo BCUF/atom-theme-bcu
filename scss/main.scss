@@ -189,7 +189,7 @@ input[type="search"]::-webkit-search-results-button {
     border-radius: .3rem;
 }
 
-.home h1, section.card > h2, h5.card-title, h6, .home #search-box2 input, h2.accordion-header > button, article.search-result a.h5, section> h2 {
+.home h1, section.card > h2, h5.card-title, .home h6, .home #search-box2 input, h2.accordion-header > button, article.search-result a.h5, section> h2 {
     font-weight: 600!important;
     font-size: 1.5rem!important;
 }
@@ -201,6 +201,12 @@ input[type="search"]::-webkit-search-results-button {
 div.card-body > h5, .home .list-group-flush > .list-group-item {
     color: black;
 }
+
+.home #search-box-input {
+    font-weight: 600!important;
+    font-size: 1.5rem!important;
+}
+
  
 .home div.page p, .home p.card-body-text, div.card-body > h5, .home .list-group-flush > .list-group-item {
     font-size: 1.5rem;
@@ -224,4 +230,8 @@ div.card-body > h5, .home .list-group-flush > .list-group-item {
     -webkit-box-orient: vertical;
     overflow: hidden;
     min-height: 4rem; /* Ajuster selon la taille du texte */
+}
+
+.search-result .text-primary {
+    font-weight: 600!important;
 }
