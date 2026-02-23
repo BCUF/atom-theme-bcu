@@ -40,11 +40,11 @@
     
     <?php if ('de' == $sf_user->getCulture()) : ?>
       <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-1" href="<?php echo url_for('https://www.fr.ch/kub'); ?>" title="Kantons-und Universitätsbibliothek" rel="">
-        <?php echo image_tag('/plugins/arBcuPlugin/images/logo_bcu_de_v3.svg', ['alt' => __('Kantons-und Universitätsbibliothek'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
+        <?php echo image_tag('/plugins/arBcuPlugin/images/BCU_logo_v4.jpg', ['alt' => __('Kantons-und Universitätsbibliothek'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
       </a>
     <?php else : ?>
       <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-1" href="<?php echo url_for('https://www.fr.ch/bcufr'); ?>" title="Bibliothèque cantonale et universitaire" rel="">
-        <?php echo image_tag('/plugins/arBcuPlugin/images/logo_bcu_fr_v3.svg', ['alt' => __('Bibliothèque cantonale et universitaire'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
+        <?php echo image_tag('/plugins/arBcuPlugin/images/BCU_logo_v4.jpg', ['alt' => __('Bibliothèque cantonale et universitaire'), 'class' => 'd-inline-block my-0 me-3', 'height' => '51']); ?>
       </a>
     <?php endif; ?>
 
