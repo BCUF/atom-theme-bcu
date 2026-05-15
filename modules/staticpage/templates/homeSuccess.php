@@ -1,80 +1,111 @@
-<div id="homepage-hero">
-	<?php decorate_with('layout_2col') ?>
+<?php decorate_with('layout_2col'); ?>
 
-	<?php slot('title') ?>
-	<h1><?php echo render_title($resource->getTitle(array('cultureFallback' => true))) ?></h1>
-	<?php end_slot() ?>
+<?php slot('bcu-filter'); ?>
+  <div class="d-flex justify-content-center main-filter">
+    <?php echo get_component('search', 'box2'); ?>
+  </div>
+<?php end_slot(); ?>
 
-	<?php slot('sidebar') ?>
+<?php slot('sidebar'); ?>
 
-	<section>
+  <?php echo get_component('menu', 'staticPagesMenu'); ?>
 
-		<input type="button" id="fullwidth-treeview-reset-button" class="c-btn c-btn-submit bcu-input" value="<?php echo __('Reset') ?>" />
-		<input type="button" id="fullwidth-treeview-more-button" class="c-btn c-btn-submit bcu-input" data-label="<?php echo __('%1% more') ?>" value="" />
-		<?php echo image_tag('/vendor/jstree/themes/default/throbber.gif', array('id' => 'fullwidth-treeview-activity-indicator', 'alt' => __('Loading ...'))) ?>
-		<h2><?php echo __('Hierarchy') ?></h2>
+  <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID); ?>
+  <?php if ($browseMenu->hasChildren()) { ?>
+    <section class="card mb-3">
+      <h2 class="h5 p-3 mb-0">
+        <?php echo __('Browse by'); ?>
+      </h2>
+      <div class="list-group list-group-flush">
+        <?php foreach ($browseMenu->getChildren() as $item) { ?>
+          <a
+            class="list-group-item list-group-item-action"
+            href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>">
+            <?php echo esc_specialchars($item->getLabel(['cultureFallback' => true])); ?>
+          </a>
+        <?php } ?>
+      </div>
+    </section>
+  <?php } ?>
 
-		<div id='main-column' class='span3'></div>
-		<span id="fullwidth-treeview-configuration" data-items-per-page="<?php echo $itemsPerPage ?>"></span>
+<?php end_slot(); ?>
 
-	</section>
-
-	<?php end_slot() ?>
-
-	<div class="page">
-
-		<section id="text-section">
-			<?php echo render_value($sf_data->getRaw('content')) ?>
-		</section>
-
-		<section style="display: inline;">
-			<div>
-				<ul class="thumbnails bcu-thumbnails">
-					<?php $thumbnails = [
-						'browsePrivateArchives' => '/plugins/arBcuPlugin/images/archives_privees.png',
-						'browseMusicalArchives' => '/plugins/arBcuPlugin/images/archives_musicales.png',
-						'browsePhotographicArchives' => '/plugins/arBcuPlugin/images/archives_photo.png',
-						'browseFilmArchives' => '/plugins/arBcuPlugin/images/archives_film_son.png',
-						'browseInstitutionalArchives' => '/plugins/arBcuPlugin/images/archives_institutions.png',
-						'browseFilmHeritage' => '/plugins/arBcuPlugin/images/patrimoine_film_son.png',
-						'browseManuscripts' => '/plugins/arBcuPlugin/images/livres_manuscrits.png',
-						'browseAncientPrints' => '/plugins/arBcuPlugin/images/imprimes_anciens_rares.png',
-						'browsePeriodicals' => '/plugins/arBcuPlugin/images/periodiques.png',
-						'browseMonographs' => '/plugins/arBcuPlugin/images/monographie.png',
-						'browsePress' => '/plugins/arBcuPlugin/images/presse.png',
-						'browsePosters' => '/plugins/arBcuPlugin/images/affiches_new.png',
-						'browseMaps' => '/plugins/arBcuPlugin/images/cartes_plans.png',
-						'browseWebsites' => '/plugins/arBcuPlugin/images/websites.png',
-						'browseEBooks' => '/plugins/arBcuPlugin/images/e-books.png',
-						'browseBibliography' => '/plugins/arBcuPlugin/images/bibliographie_fribourgeoise.png',
-					]; ?>
-					<?php $MainNav = QubitMenu::getByName('MainNav'); ?>
-					<?php if ($MainNav->hasChildren()) { ?>
-						<?php foreach ($MainNav->getChildren() as $item) { ?>
-							<li class="span2">
-								<a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
-									<img src="<?php echo ($thumbnails[$item->name]); ?>" alt="" href="#" class="">
-									<div class="bcu-overlay">
-										<div class="bcu-text">
-											<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>
-										</div>
-									</div>
-								</a>
-							</li>
-						<?php } ?>
-					<?php } ?>
-				</ul>
-			</div>
-		</section>
-
-		<?php if (QubitAcl::check($resource, 'update')) : ?>
-			<section class="actions">
-				<ul>
-					<li><?php echo link_to(__('Edit'), array($resource, 'module' => 'staticpage', 'action' => 'edit'), array('title' => __('Edit this page'), 'class' => 'c-btn')) ?></li>
-				</ul>
-			</section>
-		<?php endif; ?>
-	</div>
-
-
+<div class="page p-3">
+  <h1>
+    <?php echo render_title($resource->getTitle(['cultureFallback' => true])); ?>
+  </h1>
+  <?php echo render_value_html($sf_data->getRaw('content')); ?>
 </div>
+
+<?php if (QubitAcl::check($resource, 'update')) { ?>
+  <?php slot('after-content'); ?>
+    <section class="actions mb-3">
+      <?php echo link_to(__('Edit'), [$resource, 'module' => 'staticpage', 'action' => 'edit'], ['class' => 'btn atom-btn-outline-light']); ?>
+    </section>
+  <?php end_slot(); ?>
+<?php } ?>
+
+<?php slot('main-links'); ?>
+
+  <?php $MainLinks = QubitMenu::getByName('MainLinks'); ?>
+	<?php if (isset($MainLinks) && $MainLinks->hasChildren()) { ?>
+		<?php foreach ($MainLinks->getChildren() as $item) { ?>
+      <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
+        <div class="col">
+          <div class="card bcu bcu-card">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
+                <p class="card-text card-body-text mt-2"><?php echo esc_entities($item->getDescription(['cultureFallback' => true])); ?></p>
+              </div>
+            </div>
+          </div>
+        </a>
+    <?php } ?>
+  <?php } ?>
+							
+<?php end_slot(); ?>
+
+<?php slot('main-nav'); ?>
+<?php 
+
+$MainNav = QubitMenu::getByName('MainNav');
+if (isset($MainNav) && $MainNav->hasChildren()) {
+
+  $thumbnails = [
+    'thumbnail01' => '/plugins/arBcuPlugin/images/thumbnail01.jpg',
+    'thumbnail02' => '/plugins/arBcuPlugin/images/thumbnail02.jpg',
+    'thumbnail03' => '/plugins/arBcuPlugin/images/thumbnail03.jpg',
+    'thumbnail04' => '/plugins/arBcuPlugin/images/thumbnail04.jpg',
+    'thumbnail05' => '/plugins/arBcuPlugin/images/thumbnail05.jpg',
+    'thumbnail06' => '/plugins/arBcuPlugin/images/thumbnail06.jpg',
+    'thumbnail07' => '/plugins/arBcuPlugin/images/thumbnail07.jpg',
+    'thumbnail08' => '/plugins/arBcuPlugin/images/thumbnail08.jpg',
+    'thumbnail09' => '/plugins/arBcuPlugin/images/thumbnail09.jpg',
+    'thumbnail10' => '/plugins/arBcuPlugin/images/thumbnail10.jpg',
+    'thumbnail11' => '/plugins/arBcuPlugin/images/thumbnail11.jpg',
+    'thumbnail12' => '/plugins/arBcuPlugin/images/thumbnail12.jpg',
+    'thumbnail13' => '/plugins/arBcuPlugin/images/thumbnail13.jpg',
+    'thumbnail14' => '/plugins/arBcuPlugin/images/thumbnail14.jpg',
+    'thumbnail15' => '/plugins/arBcuPlugin/images/thumbnail15.jpg',
+    'thumbnail16' => '/plugins/arBcuPlugin/images/thumbnail16.jpg',
+    'thumbnail17' => '/plugins/arBcuPlugin/images/thumbnail17.jpg',
+    'thumbnail18' => '/plugins/arBcuPlugin/images/thumbnail18.jpg'
+  ];
+?>
+
+		<?php foreach ($MainNav->getChildren() as $item) { ?>
+      <a href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>" class="thumbnail bcu-thumbnail">
+        <div class="col">
+          <div class="card bcu bcu-card">
+          <img src="<?php echo ($thumbnails[$item->name]); ?>" class="card-img-top" alt="<?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?>">
+            <div class="card-body">
+              <h5 class="card-title card-title-img"><?php echo esc_entities($item->getLabel(['cultureFallback' => true])); ?></h5>
+              </div>
+            </div>
+          </div>
+        </a>
+    <?php } ?>
+<?php } ?>
+							
+<?php end_slot(); ?>
+
